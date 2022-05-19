@@ -3,7 +3,7 @@
 Launch Command:
 
 ```
-iwr -useb https://christitus.com/win | iex
+iwr -useb https://raw.githubusercontent.com/technoluc/winutil/main/winutil.ps1 | iex
 ```
 
 ## Issues
