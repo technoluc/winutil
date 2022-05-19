@@ -1,4 +1,4 @@
-# Chris Titus Tech Windows Utility
+# TechnoLuc's Windows Utility
 
 Launch Command:
 
