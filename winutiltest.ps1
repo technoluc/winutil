@@ -6,7 +6,7 @@
 #>
 
 # $inputXML = Get-Content "MainWindow.xaml" #uncomment for development
-$inputXML = (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/technoluc/winutil/main/MainWindow.xaml") #uncomment for Production
+$inputXML = (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/technoluc/winutil/main/MainWindow2.xaml") #uncomment for Production
 
 $inputXML = $inputXML -replace 'mc:Ignorable="d"','' -replace "x:N",'N' -replace '^<Win.*', '<Window'
 [void][System.Reflection.Assembly]::LoadWithPartialName('presentationframework')
@@ -194,6 +194,10 @@ $WPFinstall.Add_Click({
     If ( $WPFInstallsumatra.IsChecked -eq $true ) { 
         $wingetinstall.Add("SumatraPDF.SumatraPDF")
         $WPFInstallsumatra.IsChecked = $false
+    }
+    If ( $WPFInstallofficedeploymenttool.IsChecked -eq $true ) { 
+        $wingetinstall.Add("Microsoft.OfficeDeploymentTool")
+        $WPFInstallofficedeploymenttool.IsChecked = $false
     }
     If ( $WPFInstallterminal.IsChecked -eq $true ) { 
         $wingetinstall.Add("Microsoft.WindowsTerminal")
@@ -390,6 +394,10 @@ $WPFinstall.Add_Click({
     {
         Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget install -e --accept-source-agreements --accept-package-agreements --silent $node | Out-Host" -Wait -WindowStyle Maximized
         $wingetResult.Add("$node`n")
+        If ( $WPFInstallofficedeploymenttool.IsChecked -eq $true ) { 
+            iwr -outf "C:\Program Files\OfficeDeploymentTool\config.xml" "https://github.com/technoluc/winutil/raw/main/office/deploymentconfig.xml"
+            iwr -outf "C:\Program Files\OfficeDeploymentTool\install.cmd" "https://github.com/technoluc/winutil/raw/main/office/deploymentinstall.cmd"
+        }
     }
     $wingetResult.ToArray()
     $wingetResult | % { $_ } | Out-Host
