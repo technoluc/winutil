@@ -179,6 +179,10 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("7zip.7zip")
         $WPFInstallsevenzip.IsChecked = $false
     }
+    If ( $WPFInstallpartitionwizard.IsChecked -eq $true ) { 
+        $wingetinstall.Add("MiniTool.PartitionWizard.Free")
+        $WPFInstallpartitionwizard.IsChecked = $false
+    }
     If ( $WPFInstallsharex.IsChecked -eq $true ) { 
         $wingetinstall.Add("ShareX.ShareX")
         $WPFInstallsharex.IsChecked = $false
