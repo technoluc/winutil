@@ -6,7 +6,7 @@
 #>
 
 # $inputXML = Get-Content "MainWindow.xaml" #uncomment for development
-$inputXML = (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/ChrisTitusTech/winutil/main/MainWindow.xaml") #uncomment for Production
+$inputXML = (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/technoluc/winutil/main/MainWindow.xaml") #uncomment for Production
 
 $inputXML = $inputXML -replace 'mc:Ignorable="d"','' -replace "x:N",'N' -replace '^<Win.*', '<Window'
 [void][System.Reflection.Assembly]::LoadWithPartialName('presentationframework')
@@ -528,7 +528,7 @@ $WPFtweaksbutton.Add_Click({
     If ( $WPFEssTweaksOO.IsChecked -eq $true ) {
         Write-Host "Running O&O Shutup with Recommended Settings"
         Import-Module BitsTransfer
-        Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
+        Start-BitsTransfer -Source "https://raw.githubusercontent.com/technoluc/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
         Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
         ./OOSU10.exe ooshutup10.cfg /quiet
         $WPFEssTweaksOO.IsChecked = $false
