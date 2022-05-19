@@ -398,10 +398,7 @@ $WPFinstall.Add_Click({
     
     $wingetResult.ToArray()
     $wingetResult | % { $_ } | Out-Host
-    If ( $WPFInstalloffice.IsChecked -eq $true ) { 
-        iwr -outf "C:\Program Files\OfficeDeploymentTool\config.xml" "https://github.com/technoluc/winutil/raw/main/office/deploymentconfig.xml"
-        iwr -outf "C:\Program Files\OfficeDeploymentTool\install.cmd" "https://github.com/technoluc/winutil/raw/main/office/deploymentinstall.cmd"
-    }
+    
     # Popup after finished
     $ButtonType = [System.Windows.MessageBoxButton]::OK
     $MessageboxTitle = "Installed Programs "
