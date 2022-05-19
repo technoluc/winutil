@@ -195,9 +195,9 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("SumatraPDF.SumatraPDF")
         $WPFInstallsumatra.IsChecked = $false
     }
-    If ( $WPFInstallofficedeploymenttool.IsChecked -eq $true ) { 
+    If ( $WPFInstalloffice.IsChecked -eq $true ) { 
         $wingetinstall.Add("Microsoft.OfficeDeploymentTool")
-        $WPFInstallofficedeploymenttool.IsChecked = $false
+        $WPFInstalloffice.IsChecked = $false
     }
     If ( $WPFInstallterminal.IsChecked -eq $true ) { 
         $wingetinstall.Add("Microsoft.WindowsTerminal")
@@ -394,7 +394,7 @@ $WPFinstall.Add_Click({
     {
         Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget install -e --accept-source-agreements --accept-package-agreements --silent $node | Out-Host" -Wait -WindowStyle Maximized
         $wingetResult.Add("$node`n")
-        If ( $WPFInstallofficedeploymenttool.IsChecked -eq $true ) { 
+        If ( $WPFInstalloffice.IsChecked -eq $true ) { 
             iwr -outf "C:\Program Files\OfficeDeploymentTool\config.xml" "https://github.com/technoluc/winutil/raw/main/office/deploymentconfig.xml"
             iwr -outf "C:\Program Files\OfficeDeploymentTool\install.cmd" "https://github.com/technoluc/winutil/raw/main/office/deploymentinstall.cmd"
         }
