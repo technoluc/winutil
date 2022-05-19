@@ -395,13 +395,13 @@ $WPFinstall.Add_Click({
         Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget install -e --accept-source-agreements --accept-package-agreements --silent $node | Out-Host" -Wait -WindowStyle Maximized
         $wingetResult.Add("$node`n")
     }
+    
+    $wingetResult.ToArray()
+    $wingetResult | % { $_ } | Out-Host
     If ( $WPFInstalloffice.IsChecked -eq $true ) { 
         iwr -outf "C:\Program Files\OfficeDeploymentTool\config.xml" "https://github.com/technoluc/winutil/raw/main/office/deploymentconfig.xml"
         iwr -outf "C:\Program Files\OfficeDeploymentTool\install.cmd" "https://github.com/technoluc/winutil/raw/main/office/deploymentinstall.cmd"
     }
-    $wingetResult.ToArray()
-    $wingetResult | % { $_ } | Out-Host
-
     # Popup after finished
     $ButtonType = [System.Windows.MessageBoxButton]::OK
     $MessageboxTitle = "Installed Programs "
