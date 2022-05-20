@@ -83,7 +83,7 @@ $WPFinstall.Add_Click({
         $WPFInstallnotion.IsChecked = $false
     }
     If ( $WPFInstalltermius.IsChecked -eq $true ) { 
-        $wingetinstall.Add("Termius.Termius --source winget")
+        $wingetinstall.Add("Termius.Termius")
         $WPFInstalltermius.IsChecked = $false
     }
     If ( $WPFInstalladobe.IsChecked -eq $true ) { 
