@@ -6,7 +6,7 @@
 #>
 
 # $inputXML = Get-Content "MainWindow.xaml" #uncomment for development
-$inputXML = (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/ChrisTitusTech/winutil/main/MainWindow.xaml") #uncomment for Production
+$inputXML = (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/technoluc/winutil/main/MainWindow.xaml") #uncomment for Production
 
 $inputXML = $inputXML -replace 'mc:Ignorable="d"','' -replace "x:N",'N' -replace '^<Win.*', '<Window'
 [void][System.Reflection.Assembly]::LoadWithPartialName('presentationframework')
@@ -74,6 +74,10 @@ $WPFTab4BT.Add_Click({
 #===========================================================================
 $WPFinstall.Add_Click({
     $wingetinstall = New-Object System.Collections.Generic.List[System.Object]
+    If ( $WPFInstallofficetool.IsChecked -eq $true ) { 
+        $wingetinstall.Add("Microsoft.OfficeDeploymentTool")
+        $WPFInstallofficetool.IsChecked = $false
+    }
     If ( $WPFInstalladobe.IsChecked -eq $true ) { 
         $wingetinstall.Add("Adobe.Acrobat.Reader.64-bit")
         $WPFInstalladobe.IsChecked = $false
@@ -178,6 +182,10 @@ $WPFinstall.Add_Click({
     If ( $WPFInstallsevenzip.IsChecked -eq $true ) { 
         $wingetinstall.Add("7zip.7zip")
         $WPFInstallsevenzip.IsChecked = $false
+    }
+    If ( $WPFInstallpartitionwizard.IsChecked -eq $true ) { 
+        $wingetinstall.Add("MiniTool.PartitionWizard.Free")
+        $WPFInstallpartitionwizard.IsChecked = $false
     }
     If ( $WPFInstallsharex.IsChecked -eq $true ) { 
         $wingetinstall.Add("ShareX.ShareX")
@@ -384,16 +392,27 @@ $WPFinstall.Add_Click({
     $wingetResult = New-Object System.Collections.Generic.List[System.Object]
     foreach ( $node in $wingetinstall )
     {
-        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget install -e --accept-source-agreements --accept-package-agreements --silent $node | Out-Host" -Wait -WindowStyle Maximized
+        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget install -e --accept-source-agreements --accept-package-agreements --silent $node | Out-Host" -Wait
         $wingetResult.Add("$node`n")
+    } 
+    If ( $wingetinstall -eq "Microsoft.OfficeDeploymentTool" )
+    { 
+        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command iwr -outf 'C:\Program Files\OfficeDeploymentTool\config.xml' 'https://github.com/technoluc/winutil/raw/main/office/deploymentconfig.xml' ; iwr -outf 'C:\Program Files\OfficeDeploymentTool\install.cmd' 'https://github.com/technoluc/winutil/raw/main/office/deploymentinstall.cmd' ; iwr -outf 'C:\Program Files\OfficeDeploymentTool\activate.cmd' 'https://github.com/technoluc/winutil/raw/main/office/ActivateOffice21.cmd'"
     }
+    
+        
     $wingetResult.ToArray()
     $wingetResult | % { $_ } | Out-Host
 
     # Popup after finished
     $ButtonType = [System.Windows.MessageBoxButton]::OK
     $MessageboxTitle = "Installed Programs "
-    $Messageboxbody = ($wingetResult)
+    if ( $wingetinstall -eq "Microsoft.OfficeDeploymentTool" ) {
+            $Messageboxbody = ( "Please execute install.cmd as Administrator from C:\Program Files\OfficeDeploymentTool. After installation completes execute activate.cmd" )
+    }
+    else {
+            $Messageboxbody = ($wingetResult)
+    } 
     $MessageIcon = [System.Windows.MessageBoxImage]::Information
 
     [System.Windows.MessageBox]::Show($Messageboxbody,$MessageboxTitle,$ButtonType,$MessageIcon)
