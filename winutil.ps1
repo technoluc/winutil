@@ -78,6 +78,10 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("Microsoft.OfficeDeploymentTool")
         $WPFInstallofficetool.IsChecked = $false
     }
+    If ( $WPFInstallnotion.IsChecked -eq $true ) { 
+        $wingetinstall.Add("Notion.Notion")
+        $WPFInstallnotion.IsChecked = $false
+    }
     If ( $WPFInstalladobe.IsChecked -eq $true ) { 
         $wingetinstall.Add("Adobe.Acrobat.Reader.64-bit")
         $WPFInstalladobe.IsChecked = $false
