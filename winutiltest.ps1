@@ -74,9 +74,9 @@ $WPFTab4BT.Add_Click({
 #===========================================================================
 $WPFinstall.Add_Click({
     $wingetinstall = New-Object System.Collections.Generic.List[System.Object]
-    If ( $Installoffice.IsChecked -eq $true ) { 
+    If ( $WPFInstalloffice.IsChecked -eq $true ) { 
         $wingetinstall.Add("Microsoft.OfficeDeploymentTool")
-        $Installoffice.IsChecked = $false
+        $WPFInstalloffice.IsChecked = $false
     }
     If ( $WPFInstalladobe.IsChecked -eq $true ) { 
         $wingetinstall.Add("Adobe.Acrobat.Reader.64-bit")
@@ -392,7 +392,7 @@ $WPFinstall.Add_Click({
     $wingetResult = New-Object System.Collections.Generic.List[System.Object]
     foreach ( $node in $wingetinstall )
     {
-        Start-Process powershell.exe -Verb RunAs "winget install -e --accept-source-agreements --accept-package-agreements --silent $node | Out-Host" -Wait
+        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget install -e --accept-source-agreements --accept-package-agreements --silent $node | Out-Host" -Wait
         $wingetResult.Add("$node`n")
     }
     $wingetResult.ToArray()
