@@ -110,10 +110,6 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("Google.Chrome")
         $WPFInstallchrome.IsChecked = $false
     }
-    If ( $WPFInstalldiscord.IsChecked -eq $true ) { 
-        $wingetinstall.Add("Discord.Discord")
-        $WPFInstalldiscord.IsChecked = $false
-    }
     If ( $WPFInstallesearch.IsChecked -eq $true ) { 
         $wingetinstall.Add("voidtools.Everything --source winget")
         $WPFInstallesearch.IsChecked = $false
@@ -121,10 +117,6 @@ $WPFinstall.Add_Click({
     If ( $WPFInstalletcher.IsChecked -eq $true ) { 
         $wingetinstall.Add("Balena.Etcher")
         $WPFInstalletcher.IsChecked = $false
-    }
-    If ( $WPFInstallfirefox.IsChecked -eq $true ) { 
-        $wingetinstall.Add("Mozilla.Firefox")
-        $WPFInstallfirefox.IsChecked = $false
     }
     If ( $WPFInstallgimp.IsChecked -eq $true ) { 
         $wingetinstall.Add("GIMP.GIMP")
@@ -281,10 +273,6 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("HandBrake.HandBrake")
         $WPFInstallhandbrake.IsChecked = $false
     }      
-    If ( $WPFInstallhexchat.IsChecked -eq $true ) { 
-        $wingetinstall.Add("HexChat.HexChat")
-        $WPFInstallhexchat.IsChecked = $false
-    }       
     If ( $WPFInstallhwinfo.IsChecked -eq $true ) { 
         $wingetinstall.Add("REALiX.HWiNFO")
         $WPFInstallhwinfo.IsChecked = $false
@@ -297,18 +285,10 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("KeePassXCTeam.KeePassXC")
         $WPFInstallkeepass.IsChecked = $false
     }              
-    If ( $WPFInstalllibrewolf.IsChecked -eq $true ) { 
-        $wingetinstall.Add("LibreWolf.LibreWolf")
-        $WPFInstalllibrewolf.IsChecked = $false
-    }            
     If ( $WPFInstallmalwarebytes.IsChecked -eq $true ) { 
         $wingetinstall.Add("Malwarebytes.Malwarebytes")
         $WPFInstallmalwarebytes.IsChecked = $false
     }          
-    If ( $WPFInstallmatrix.IsChecked -eq $true ) { 
-        $wingetinstall.Add("Element.Element")
-        $WPFInstallmatrix.IsChecked = $false
-    } 
     If ( $WPFInstallmremoteng.IsChecked -eq $true ) { 
         $wingetinstall.Add("mRemoteNG.mRemoteNG")
         $WPFInstallmremoteng.IsChecked = $false
