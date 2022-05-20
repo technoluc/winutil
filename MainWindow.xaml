@@ -33,14 +33,9 @@
 							<CheckBox Name="Installbrave" Content="Brave" Margin="5,0"/>
 							<CheckBox Name="Installchrome" Content="Google Chrome" Margin="5,0"/>
 							<CheckBox Name="Installchromium" Content="Un-Googled Chromium" Margin="5,0"/>
-							<CheckBox Name="Installfirefox" Content="Firefox" Margin="5,0"/>
-							<CheckBox Name="Installlibrewolf" Content="LibreWolf" Margin="5,0"/>
 							<CheckBox Name="Installvivaldi" Content="Vivaldi" Margin="5,0"/>
 
 							<Label Content="Communications" FontSize="16" Margin="5,0"/>
-							<CheckBox Name="Installdiscord" Content="Discord" Margin="5,0"/>
-							<CheckBox Name="Installhexchat" Content="Hexchat" Margin="5,0"/>
-							<CheckBox Name="Installmatrix" Content="Matrix" Margin="5,0"/>
 							<CheckBox Name="Installsignal" Content="Signal" Margin="5,0"/>
 							<CheckBox Name="Installskype" Content="Skype" Margin="5,0"/>
 							<CheckBox Name="Installslack" Content="Slack" Margin="5,0"/>
