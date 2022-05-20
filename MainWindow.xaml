@@ -74,6 +74,7 @@
 							<CheckBox Name="Installobsidian" Content="Obsidian" Margin="5,0"/>
 							<CheckBox Name="Installsumatra" Content="Sumatra PDF" Margin="5,0"/>
 							<CheckBox Name="Installofficetool" Content="Office Deployment Tool" Margin="5,0"/>
+							<CheckBox Name="Installnotion" Content="Notion" Margin="5,0"/>
 
 							<Label Content="Games" FontSize="16" Margin="5,0"/>
 							<CheckBox Name="Installepicgames" Content="Epic Games Launcher" Margin="5,0"/>
