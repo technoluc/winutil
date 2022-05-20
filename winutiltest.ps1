@@ -74,9 +74,9 @@ $WPFTab4BT.Add_Click({
 #===========================================================================
 $WPFinstall.Add_Click({
     $wingetinstall = New-Object System.Collections.Generic.List[System.Object]
-    If ( $WPFInstalloffice.IsChecked -eq $true ) { 
+    If ( $WPFInstallofficetool.IsChecked -eq $true ) { 
         $wingetinstall.Add("Microsoft.OfficeDeploymentTool")
-        $WPFInstalloffice.IsChecked = $false
+        $WPFInstallofficetool.IsChecked = $false
     }
     If ( $WPFInstalladobe.IsChecked -eq $true ) { 
         $wingetinstall.Add("Adobe.Acrobat.Reader.64-bit")
