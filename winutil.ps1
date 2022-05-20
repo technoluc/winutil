@@ -82,6 +82,10 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("Notion.Notion")
         $WPFInstallnotion.IsChecked = $false
     }
+    If ( $WPFInstalltermius.IsChecked -eq $true ) { 
+        $wingetinstall.Add("Termius.Termius --source winget")
+        $WPFInstalltermius.IsChecked = $false
+    }
     If ( $WPFInstalladobe.IsChecked -eq $true ) { 
         $wingetinstall.Add("Adobe.Acrobat.Reader.64-bit")
         $WPFInstalladobe.IsChecked = $false

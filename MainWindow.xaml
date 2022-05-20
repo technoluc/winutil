@@ -80,6 +80,7 @@
 							<CheckBox Name="Installadvancedip" Content="Advanced IP Scanner" Margin="5,0"/>
 							<CheckBox Name="Installmremoteng" Content="mRemoteNG" Margin="5,0"/>
 							<CheckBox Name="Installputty" Content="Putty" Margin="5,0"/>
+							<CheckBox Name="Installtermius" Content="Termius" Margin="5,0"/>
 							<CheckBox Name="Installscp" Content="WinSCP" Margin="5,0"/>
 							<CheckBox Name="Installwireshark" Content="WireShark" Margin="5,0"/>
 
