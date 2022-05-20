@@ -6,7 +6,7 @@
 #>
 
 # $inputXML = Get-Content "MainWindow.xaml" #uncomment for development
-$inputXML = (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/technoluc/winutil/main/MainWindow2.xaml") #uncomment for Production
+$inputXML = (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/technoluc/winutil/main/MainWindow.xaml") #uncomment for Production
 
 $inputXML = $inputXML -replace 'mc:Ignorable="d"','' -replace "x:N",'N' -replace '^<Win.*', '<Window'
 [void][System.Reflection.Assembly]::LoadWithPartialName('presentationframework')
@@ -74,6 +74,10 @@ $WPFTab4BT.Add_Click({
 #===========================================================================
 $WPFinstall.Add_Click({
     $wingetinstall = New-Object System.Collections.Generic.List[System.Object]
+    If ( $Installoffice.IsChecked -eq $true ) { 
+        $wingetinstall.Add("Microsoft.OfficeDeploymentTool")
+        $Installoffice.IsChecked = $false
+    }
     If ( $WPFInstalladobe.IsChecked -eq $true ) { 
         $wingetinstall.Add("Adobe.Acrobat.Reader.64-bit")
         $WPFInstalladobe.IsChecked = $false
@@ -194,10 +198,6 @@ $WPFinstall.Add_Click({
     If ( $WPFInstallsumatra.IsChecked -eq $true ) { 
         $wingetinstall.Add("SumatraPDF.SumatraPDF")
         $WPFInstallsumatra.IsChecked = $false
-    }
-    If ( $WPFInstalloffice.IsChecked -eq $true ) { 
-        $wingetinstall.Add("Microsoft.OfficeDeploymentTool")
-        $WPFInstalloffice.IsChecked = $false
     }
     If ( $WPFInstallterminal.IsChecked -eq $true ) { 
         $wingetinstall.Add("Microsoft.WindowsTerminal")
@@ -395,10 +395,9 @@ $WPFinstall.Add_Click({
         Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget install -e --accept-source-agreements --accept-package-agreements --silent $node | Out-Host" -Wait -WindowStyle Maximized
         $wingetResult.Add("$node`n")
     }
-    
     $wingetResult.ToArray()
     $wingetResult | % { $_ } | Out-Host
-    
+
     # Popup after finished
     $ButtonType = [System.Windows.MessageBoxButton]::OK
     $MessageboxTitle = "Installed Programs "
