@@ -384,7 +384,7 @@ $WPFinstall.Add_Click({
         $wingetResult.Add("$node`n")
     } 
     If ( $wingetinstall -eq "Microsoft.OfficeDeploymentTool" )
-    { 
+    {   $wingetResult.Add("Please execute install.cmd as Administrator from C:\Program Files\OfficeDeploymentTool. After installation completes execute activate.cmd")
         Start-Process powershell.exe -Verb RunAs -ArgumentList "-command iwr -outf 'C:\Program Files\OfficeDeploymentTool\config.xml' 'https://github.com/technoluc/winutil/raw/main/office/deploymentconfig.xml' ; iwr -outf 'C:\Program Files\OfficeDeploymentTool\install.cmd' 'https://github.com/technoluc/winutil/raw/main/office/deploymentinstall.cmd' ; iwr -outf 'C:\Program Files\OfficeDeploymentTool\activate.cmd' 'https://github.com/technoluc/winutil/raw/main/office/ActivateOffice21.cmd'"
     }
     
@@ -395,12 +395,7 @@ $WPFinstall.Add_Click({
     # Popup after finished
     $ButtonType = [System.Windows.MessageBoxButton]::OK
     $MessageboxTitle = "Installed Programs "
-    if ( $wingetinstall -eq "Microsoft.OfficeDeploymentTool" ) {
-            $Messageboxbody = ( "Please execute install.cmd as Administrator from C:\Program Files\OfficeDeploymentTool. After installation completes execute activate.cmd" )
-    }
-    else {
-            $Messageboxbody = ($wingetResult)
-    } 
+    $Messageboxbody = ($wingetResult) 
     $MessageIcon = [System.Windows.MessageBoxImage]::Information
 
     [System.Windows.MessageBox]::Show($Messageboxbody,$MessageboxTitle,$ButtonType,$MessageIcon)
