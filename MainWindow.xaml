@@ -71,11 +71,6 @@
 							<CheckBox Name="Installofficetool" Content="Office Deployment Tool" Margin="5,0"/>
 							<CheckBox Name="Installnotion" Content="Notion" Margin="5,0"/>
 
-							<Label Content="Games" FontSize="16" Margin="5,0"/>
-							<CheckBox Name="Installepicgames" Content="Epic Games Launcher" Margin="5,0"/>
-							<CheckBox Name="Installgog" Content="GOG Galaxy" Margin="5,0"/>
-							<CheckBox Name="Installsteam" Content="Steam" Margin="5,0"/>
-
 							<Label Content="Pro Tools" FontSize="16" Margin="5,0"/>
 							<CheckBox Name="Installadvancedip" Content="Advanced IP Scanner" Margin="5,0"/>
 							<CheckBox Name="Installmremoteng" Content="mRemoteNG" Margin="5,0"/>
@@ -87,9 +82,7 @@
 							<Label Content="Multimedia Tools" FontSize="16" Margin="5,0"/>
 							<CheckBox Name="Installaudacity" Content="Audacity" Margin="5,0"/>
 							<CheckBox Name="Installblender" Content="Blender (3D Graphics)" Margin="5,0"/>
-							<CheckBox Name="Installeartrumpet" Content="Eartrumpet (Audio)" Margin="5,0"/>
 							<CheckBox Name="Installflameshot" Content="Flameshot (Screenshots)" Margin="5,0"/>
-							<CheckBox Name="Installfoobar" Content="Foobar2000 (Music Player)" Margin="5,0"/>
 							<CheckBox Name="Installgimp" Content="GIMP (Image Editor)" Margin="5,0"/>
 							<CheckBox Name="Installgreenshot" Content="Greenshot (Screenshots)" Margin="5,0"/>
 							<CheckBox Name="Installhandbrake" Content="HandBrake" Margin="5,0"/>
@@ -126,7 +119,8 @@
 							<CheckBox Name="Installtreesize" Content="TreeSize Free" Margin="5,0"/>
 							<CheckBox Name="Installwindirstat" Content="WinDirStat" Margin="5,0"/>
 							<CheckBox Name="Installterminal" Content="Windows Terminal" Margin="5,0"/>
-							<Button Name="install" Background="AliceBlue" Content="Start Install" Margin="20,5,20,5" ToolTip="Install all checked programs"/>
+							
+              <Button Name="install" Background="AliceBlue" Content="Start Install" Margin="20,5,20,5" ToolTip="Install all checked programs"/>
 							<Button Name="InstallUpgrade" Background="AliceBlue" Content="Upgrade Installs" Margin="20,5,20,5" ToolTip="Upgrade All Existing Programs on System"/>
 
 						</StackPanel>

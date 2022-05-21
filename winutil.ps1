@@ -245,26 +245,10 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("CPUID.CPU-Z")
         $WPFInstallcpuz.IsChecked = $false
     }                            
-    If ( $WPFInstalleartrumpet.IsChecked -eq $true ) { 
-        $wingetinstall.Add("File-New-Project.EarTrumpet")
-        $WPFInstalleartrumpet.IsChecked = $false
-    }           
-    If ( $WPFInstallepicgames.IsChecked -eq $true ) { 
-        $wingetinstall.Add("EpicGames.EpicGamesLauncher")
-        $WPFInstallepicgames.IsChecked = $false
-    }                                      
     If ( $WPFInstallflameshot.IsChecked -eq $true ) { 
         $wingetinstall.Add("Flameshot.Flameshot")
         $WPFInstallflameshot.IsChecked = $false
     }            
-    If ( $WPFInstallfoobar.IsChecked -eq $true ) { 
-        $wingetinstall.Add("PeterPawlowski.foobar2000")
-        $WPFInstallfoobar.IsChecked = $false
-    }                     
-    If ( $WPFInstallgog.IsChecked -eq $true ) { 
-        $wingetinstall.Add("GOG.Galaxy")
-        $WPFInstallgog.IsChecked = $false
-    }                  
     If ( $WPFInstallgpuz.IsChecked -eq $true ) { 
         $wingetinstall.Add("TechPowerUp.GPU-Z")
         $WPFInstallgpuz.IsChecked = $false
@@ -333,10 +317,6 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("Spotify.Spotify")
         $WPFInstallspotify.IsChecked = $false
     }              
-    If ( $WPFInstallsteam.IsChecked -eq $true ) { 
-        $wingetinstall.Add("Valve.Steam")
-        $WPFInstallsteam.IsChecked = $false
-    }                             
     If ( $WPFInstallteamviewer.IsChecked -eq $true ) { 
         $wingetinstall.Add("TeamViewer.TeamViewer")
         $WPFInstallteamviewer.IsChecked = $false
