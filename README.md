@@ -8,6 +8,8 @@
 iwr -useb https://win.technoluc.nl | iex
 ```
 
+### [Download Tool](https://github.com/technoluc/winutil/releases/download/v1.0/winutil.exe)
+
 Added: Notion, Termius, Minitool Partition Wizard
 
 Personal favorite: 
