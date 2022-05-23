@@ -9,6 +9,7 @@ iwr -useb https://win.technoluc.nl | iex
 ```
 
 Added: Notion, Termius, Minitool Partition Wizard
+
 Personal favorite: 
 Tweaks: ESSENTIAL Cat Bin
 
