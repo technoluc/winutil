@@ -144,6 +144,7 @@
 						</StackPanel>
 						<StackPanel Background="#777777" SnapsToDevicePixels="True" Grid.Row="1" Grid.Column="0" Margin="10,5">
 							<Label FontSize="16" Content="Essential Tweaks"/>
+							<CheckBox Name="CatBin" Content="ESSENTIAL Cat Bin" Margin="5,0"/>
 							<CheckBox Name="EssTweaksRP" Content="Create Restore Point" Margin="5,0"/>
 							<CheckBox Name="EssTweaksOO" Content="Run O and O Shutup" Margin="5,0"/>
 							<CheckBox Name="EssTweaksTele" Content="Disable Telemetry" Margin="5,0"/>

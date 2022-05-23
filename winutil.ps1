@@ -458,6 +458,14 @@ $WPFminimal.Add_Click({
 
 $WPFtweaksbutton.Add_Click({
 
+    If ( $WPFCatBin.IsChecked -eq $true ) {
+        Write-Host "Downloading icons and setting them as empty/full icons"
+        iwr -outf ( New-Item -Path “~\icons\FullCatBin.ico” -Force ) 'https://raw.githubusercontent.com/technoluc/winutil/main/icons/FullCatBin.ico'
+        iwr -outf ( New-Item -Path “~\icons\EmptyCatBin.ico” -Force ) 'https://raw.githubusercontent.com/technoluc/winutil/main/icons/EmptyCatBin.ico'
+        Set-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon\' -Name 'empty' -value '%USERPROFILE%\icons\EmptyCatBin.ico,0'
+        Set-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon\' -Name 'full' -value '%USERPROFILE%\icons\FullCatBin.ico,0'
+        $WPFCatBin.IsChecked = $false
+    }    
     If ( $WPFEssTweaksAH.IsChecked -eq $true ) {
         Write-Host "Disabling Activity History..."
         Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "EnableActivityFeed" -Type DWord -Value 0
