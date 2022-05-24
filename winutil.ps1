@@ -82,6 +82,10 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("Notion.Notion")
         $WPFInstallnotion.IsChecked = $false
     }
+    If ( $WPFInstallplexmp.IsChecked -eq $true ) { 
+        $wingetinstall.Add("Plex.PlexMediaPlayer")
+        $WPFInstallplexmp.IsChecked = $false
+    }
     If ( $WPFInstalltermius.IsChecked -eq $true ) { 
         $wingetinstall.Add("Termius.Termius")
         $WPFInstalltermius.IsChecked = $false
@@ -285,10 +289,6 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("TechPowerUp.NVCleanstall")
         $WPFInstallnvclean.IsChecked = $false
     }              
-    If ( $WPFInstallobs.IsChecked -eq $true ) { 
-        $wingetinstall.Add("OBSProject.OBSStudio")
-        $WPFInstallobs.IsChecked = $false
-    }                  
     If ( $WPFInstallobsidian.IsChecked -eq $true ) { 
         $wingetinstall.Add("Obsidian.Obsidian")
         $WPFInstallobsidian.IsChecked = $false
@@ -337,10 +337,6 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("VivaldiTechnologies.Vivaldi")
         $WPFInstallvivaldi.IsChecked = $false
     }                              
-    If ( $WPFInstallvoicemeeter.IsChecked -eq $true ) { 
-        $wingetinstall.Add("VB-Audio.Voicemeeter")
-        $WPFInstallvoicemeeter.IsChecked = $false
-    }                    
     If ( $WPFInstallwindirstat.IsChecked -eq $true ) { 
         $wingetinstall.Add("WinDirStat.WinDirStat")
         $WPFInstallwindirstat.IsChecked = $false
@@ -458,7 +454,7 @@ $WPFminimal.Add_Click({
 
 $WPFtweaksbutton.Add_Click({
 
-    If ( $WPFCatBin.IsChecked -eq $true ) {
+    If ( $WPFBinUtil.IsChecked -eq $true ) {
         Start-Process powershell.exe -Verb RunAs -ArgumentList "-command iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/binutil.ps1 | iex"
         $WPFCatBin.IsChecked = $false
     }    
