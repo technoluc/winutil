@@ -55,7 +55,7 @@
 							<CheckBox Name="Installpython3" Content="Python3" Margin="5,0"/>
 							<CheckBox Name="Installsublime" Content="Sublime" Margin="5,0"/>
 							<CheckBox Name="Installvisualstudio" Content="Visual Studio 2022 Community" Margin="5,0"/>
-							<CheckBox Name="Installvscode" Content="VS Code" Margin="5,0"/>
+							<CheckBox Name="Installvscode" Content="Visual Studio Code" Margin="5,0"/>
 							<CheckBox Name="Installvscodium" Content="VS Codium" Margin="5,0"/>
 
 							
