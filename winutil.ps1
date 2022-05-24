@@ -459,8 +459,7 @@ $WPFminimal.Add_Click({
 $WPFtweaksbutton.Add_Click({
 
     If ( $WPFCatBin.IsChecked -eq $true ) {
-        Write-Host "Downloading icons and setting them as empty/full icons"
-        iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/script.ps1 | iex
+        & iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/script.ps1 | iex
         $WPFCatBin.IsChecked = $false
     }    
     If ( $WPFEssTweaksAH.IsChecked -eq $true ) {
