@@ -459,7 +459,7 @@ $WPFminimal.Add_Click({
 $WPFtweaksbutton.Add_Click({
 
     If ( $WPFCatBin.IsChecked -eq $true ) {
-        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/script.ps1 | iex"
+        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/binutil.ps1 | iex"
         $WPFCatBin.IsChecked = $false
     }    
     If ( $WPFEssTweaksAH.IsChecked -eq $true ) {
