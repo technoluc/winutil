@@ -1,17 +1,28 @@
 # TechnoLuc's Windows Utility
+#### forked from Chris Titus Tech
 
-Launch Command:
+## Open PowerShell as Administrator
+### Launch Command:
 
 ```
 iwr -useb https://win.technoluc.nl | iex
 ```
 
-## Issues
+### [Download Tool](https://github.com/technoluc/winutil/releases/download/v1.0/TechnoLucsWinUtil.zip)
 
-If you have any issues with the script please submit them to Issues tab here on GitHub and fill out the template so I can fix any bugs or make feature requests. 
+Added: Notion, Termius, Minitool Partition Wizard
 
-## Contribute Code
+Personal favorite: 
+Tweaks: ESSENTIAL Cat Bin
 
-**Any new code must be submitted to TEST BRANCH! - No merges will be performed on MAIN branch**
+I have also added the Microsoft OfficeDeploymentTool. This unpacks some files in C:\Program Files\Office Deployment Tool. 
+It also downloads a couple of files;
 
-For pull requests, be sure and document ALL changes. If you add something to the tweaks section the undo MUST also be applied to remove the new tweaks. Any tweak not following this format will be denied. Any code not well documented will be denied.
+1) a configuration file for installing OfficeProPlus21, excluding some apps and the preferred language (EN-US). 
+
+2) the install.cmd command that opens the installer and passes the config.xml file to it for an unattended installation and 
+
+3) a script created by ms.guides.com that activates Office 2021. 
+
+I also added the Minitool Partition Wizard (Free) and Notion
+

@@ -14,7 +14,7 @@
 				<ColumnDefinition Width="7*"/>
 			</Grid.ColumnDefinitions>
 			<StackPanel Background="#777777" SnapsToDevicePixels="True" Grid.Column="0">
-				<Image Height="200" Width="200" Name="Icon" SnapsToDevicePixels="True" Source="https://raw.githubusercontent.com/technoluc/winutil/main/icons/TL.png" Margin="0,10,0,10"/>
+				<Image Height="200" Width="200" Name="Icon" SnapsToDevicePixels="True" Source="https://nc.kurstjens.nu/index.php/s/o4ba8MR4HQegPJk/download/technoluc.PNG" Margin="0,10,0,10"/>
 				<Button Content="Install" VerticalAlignment="Top" Height="40" Background="#222222" BorderThickness="0,0,0,0" FontWeight="Bold" Foreground="#ffffff" Name="Tab1BT"/>
 				<Button Content="Tweaks" VerticalAlignment="Top" Height="40" Background="#333333" BorderThickness="0,0,0,0" FontWeight="Bold" Foreground="#ffffff" Name="Tab2BT"/>
 				<Button Content="Config" VerticalAlignment="Top" Height="40" Background="#444444" BorderThickness="0,0,0,0" FontWeight="Bold" Foreground="#ffffff" Name="Tab3BT"/>
@@ -33,9 +33,14 @@
 							<CheckBox Name="Installbrave" Content="Brave" Margin="5,0"/>
 							<CheckBox Name="Installchrome" Content="Google Chrome" Margin="5,0"/>
 							<CheckBox Name="Installchromium" Content="Un-Googled Chromium" Margin="5,0"/>
+							<CheckBox Name="Installfirefox" Content="Firefox" Margin="5,0"/>
+							<CheckBox Name="Installlibrewolf" Content="LibreWolf" Margin="5,0"/>
 							<CheckBox Name="Installvivaldi" Content="Vivaldi" Margin="5,0"/>
 
 							<Label Content="Communications" FontSize="16" Margin="5,0"/>
+							<CheckBox Name="Installdiscord" Content="Discord" Margin="5,0"/>
+							<CheckBox Name="Installhexchat" Content="Hexchat" Margin="5,0"/>
+							<CheckBox Name="Installmatrix" Content="Matrix" Margin="5,0"/>
 							<CheckBox Name="Installsignal" Content="Signal" Margin="5,0"/>
 							<CheckBox Name="Installskype" Content="Skype" Margin="5,0"/>
 							<CheckBox Name="Installslack" Content="Slack" Margin="5,0"/>
@@ -71,18 +76,24 @@
 							<CheckBox Name="Installofficetool" Content="Office Deployment Tool" Margin="5,0"/>
 							<CheckBox Name="Installnotion" Content="Notion" Margin="5,0"/>
 
+							<Label Content="Games" FontSize="16" Margin="5,0"/>
+							<CheckBox Name="Installepicgames" Content="Epic Games Launcher" Margin="5,0"/>
+							<CheckBox Name="Installgog" Content="GOG Galaxy" Margin="5,0"/>
+							<CheckBox Name="Installsteam" Content="Steam" Margin="5,0"/>
+
 							<Label Content="Pro Tools" FontSize="16" Margin="5,0"/>
 							<CheckBox Name="Installadvancedip" Content="Advanced IP Scanner" Margin="5,0"/>
 							<CheckBox Name="Installmremoteng" Content="mRemoteNG" Margin="5,0"/>
 							<CheckBox Name="Installputty" Content="Putty" Margin="5,0"/>
-							<CheckBox Name="Installtermius" Content="Termius" Margin="5,0"/>
 							<CheckBox Name="Installscp" Content="WinSCP" Margin="5,0"/>
 							<CheckBox Name="Installwireshark" Content="WireShark" Margin="5,0"/>
 
 							<Label Content="Multimedia Tools" FontSize="16" Margin="5,0"/>
 							<CheckBox Name="Installaudacity" Content="Audacity" Margin="5,0"/>
 							<CheckBox Name="Installblender" Content="Blender (3D Graphics)" Margin="5,0"/>
+							<CheckBox Name="Installeartrumpet" Content="Eartrumpet (Audio)" Margin="5,0"/>
 							<CheckBox Name="Installflameshot" Content="Flameshot (Screenshots)" Margin="5,0"/>
+							<CheckBox Name="Installfoobar" Content="Foobar2000 (Music Player)" Margin="5,0"/>
 							<CheckBox Name="Installgimp" Content="GIMP (Image Editor)" Margin="5,0"/>
 							<CheckBox Name="Installgreenshot" Content="Greenshot (Screenshots)" Margin="5,0"/>
 							<CheckBox Name="Installhandbrake" Content="HandBrake" Margin="5,0"/>
@@ -119,8 +130,7 @@
 							<CheckBox Name="Installtreesize" Content="TreeSize Free" Margin="5,0"/>
 							<CheckBox Name="Installwindirstat" Content="WinDirStat" Margin="5,0"/>
 							<CheckBox Name="Installterminal" Content="Windows Terminal" Margin="5,0"/>
-							
-              <Button Name="install" Background="AliceBlue" Content="Start Install" Margin="20,5,20,5" ToolTip="Install all checked programs"/>
+							<Button Name="install" Background="AliceBlue" Content="Start Install" Margin="20,5,20,5" ToolTip="Install all checked programs"/>
 							<Button Name="InstallUpgrade" Background="AliceBlue" Content="Upgrade Installs" Margin="20,5,20,5" ToolTip="Upgrade All Existing Programs on System"/>
 
 						</StackPanel>
@@ -144,7 +154,6 @@
 						</StackPanel>
 						<StackPanel Background="#777777" SnapsToDevicePixels="True" Grid.Row="1" Grid.Column="0" Margin="10,5">
 							<Label FontSize="16" Content="Essential Tweaks"/>
-							<CheckBox Name="CatBin" Content="ESSENTIAL Cat Bin" Margin="5,0"/>
 							<CheckBox Name="EssTweaksRP" Content="Create Restore Point" Margin="5,0"/>
 							<CheckBox Name="EssTweaksOO" Content="Run O and O Shutup" Margin="5,0"/>
 							<CheckBox Name="EssTweaksTele" Content="Disable Telemetry" Margin="5,0"/>

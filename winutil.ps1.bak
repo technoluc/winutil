@@ -82,10 +82,6 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("Notion.Notion")
         $WPFInstallnotion.IsChecked = $false
     }
-    If ( $WPFInstalltermius.IsChecked -eq $true ) { 
-        $wingetinstall.Add("Termius.Termius")
-        $WPFInstalltermius.IsChecked = $false
-    }
     If ( $WPFInstalladobe.IsChecked -eq $true ) { 
         $wingetinstall.Add("Adobe.Acrobat.Reader.64-bit")
         $WPFInstalladobe.IsChecked = $false
@@ -114,6 +110,10 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("Google.Chrome")
         $WPFInstallchrome.IsChecked = $false
     }
+    If ( $WPFInstalldiscord.IsChecked -eq $true ) { 
+        $wingetinstall.Add("Discord.Discord")
+        $WPFInstalldiscord.IsChecked = $false
+    }
     If ( $WPFInstallesearch.IsChecked -eq $true ) { 
         $wingetinstall.Add("voidtools.Everything --source winget")
         $WPFInstallesearch.IsChecked = $false
@@ -121,6 +121,10 @@ $WPFinstall.Add_Click({
     If ( $WPFInstalletcher.IsChecked -eq $true ) { 
         $wingetinstall.Add("Balena.Etcher")
         $WPFInstalletcher.IsChecked = $false
+    }
+    If ( $WPFInstallfirefox.IsChecked -eq $true ) { 
+        $wingetinstall.Add("Mozilla.Firefox")
+        $WPFInstallfirefox.IsChecked = $false
     }
     If ( $WPFInstallgimp.IsChecked -eq $true ) { 
         $wingetinstall.Add("GIMP.GIMP")
@@ -245,10 +249,26 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("CPUID.CPU-Z")
         $WPFInstallcpuz.IsChecked = $false
     }                            
+    If ( $WPFInstalleartrumpet.IsChecked -eq $true ) { 
+        $wingetinstall.Add("File-New-Project.EarTrumpet")
+        $WPFInstalleartrumpet.IsChecked = $false
+    }           
+    If ( $WPFInstallepicgames.IsChecked -eq $true ) { 
+        $wingetinstall.Add("EpicGames.EpicGamesLauncher")
+        $WPFInstallepicgames.IsChecked = $false
+    }                                      
     If ( $WPFInstallflameshot.IsChecked -eq $true ) { 
         $wingetinstall.Add("Flameshot.Flameshot")
         $WPFInstallflameshot.IsChecked = $false
     }            
+    If ( $WPFInstallfoobar.IsChecked -eq $true ) { 
+        $wingetinstall.Add("PeterPawlowski.foobar2000")
+        $WPFInstallfoobar.IsChecked = $false
+    }                     
+    If ( $WPFInstallgog.IsChecked -eq $true ) { 
+        $wingetinstall.Add("GOG.Galaxy")
+        $WPFInstallgog.IsChecked = $false
+    }                  
     If ( $WPFInstallgpuz.IsChecked -eq $true ) { 
         $wingetinstall.Add("TechPowerUp.GPU-Z")
         $WPFInstallgpuz.IsChecked = $false
@@ -261,6 +281,10 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("HandBrake.HandBrake")
         $WPFInstallhandbrake.IsChecked = $false
     }      
+    If ( $WPFInstallhexchat.IsChecked -eq $true ) { 
+        $wingetinstall.Add("HexChat.HexChat")
+        $WPFInstallhexchat.IsChecked = $false
+    }       
     If ( $WPFInstallhwinfo.IsChecked -eq $true ) { 
         $wingetinstall.Add("REALiX.HWiNFO")
         $WPFInstallhwinfo.IsChecked = $false
@@ -273,10 +297,18 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("KeePassXCTeam.KeePassXC")
         $WPFInstallkeepass.IsChecked = $false
     }              
+    If ( $WPFInstalllibrewolf.IsChecked -eq $true ) { 
+        $wingetinstall.Add("LibreWolf.LibreWolf")
+        $WPFInstalllibrewolf.IsChecked = $false
+    }            
     If ( $WPFInstallmalwarebytes.IsChecked -eq $true ) { 
         $wingetinstall.Add("Malwarebytes.Malwarebytes")
         $WPFInstallmalwarebytes.IsChecked = $false
     }          
+    If ( $WPFInstallmatrix.IsChecked -eq $true ) { 
+        $wingetinstall.Add("Element.Element")
+        $WPFInstallmatrix.IsChecked = $false
+    } 
     If ( $WPFInstallmremoteng.IsChecked -eq $true ) { 
         $wingetinstall.Add("mRemoteNG.mRemoteNG")
         $WPFInstallmremoteng.IsChecked = $false
@@ -305,7 +337,7 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("OpenWhisperSystems.Signal")
         $WPFInstallsignal.IsChecked = $false
     }
-    If ( $WPFInstallskype.IsChecked -eq $true ) { 
+     If ( $WPFInstallskype.IsChecked -eq $true ) { 
         $wingetinstall.Add("Microsoft.Skype")
         $WPFInstallskype.IsChecked = $false
     }                               
@@ -317,11 +349,15 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("Spotify.Spotify")
         $WPFInstallspotify.IsChecked = $false
     }              
+    If ( $WPFInstallsteam.IsChecked -eq $true ) { 
+        $wingetinstall.Add("Valve.Steam")
+        $WPFInstallsteam.IsChecked = $false
+    }                             
     If ( $WPFInstallteamviewer.IsChecked -eq $true ) { 
         $wingetinstall.Add("TeamViewer.TeamViewer")
         $WPFInstallteamviewer.IsChecked = $false
     }
-    If ( $WPFInstallteams.IsChecked -eq $true ) { 
+     If ( $WPFInstallteams.IsChecked -eq $true ) { 
         $wingetinstall.Add("Microsoft.Teams")
         $WPFInstallteams.IsChecked = $false
     }                        
@@ -360,11 +396,11 @@ $WPFinstall.Add_Click({
     $wingetResult = New-Object System.Collections.Generic.List[System.Object]
     foreach ( $node in $wingetinstall )
     {
-        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget install -e --accept-source-agreements --accept-package-agreements --silent $node | Out-Host" -Wait -WindowStyle Maximized
+        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget install -e --accept-source-agreements --accept-package-agreements --silent $node | Out-Host" -Wait
         $wingetResult.Add("$node`n")
     } 
     If ( $wingetinstall -eq "Microsoft.OfficeDeploymentTool" )
-    {   $wingetResult.Add("Please execute install.cmd as Administrator from C:\Program Files\OfficeDeploymentTool. After installation completes execute activate.cmd")
+    { 
         Start-Process powershell.exe -Verb RunAs -ArgumentList "-command iwr -outf 'C:\Program Files\OfficeDeploymentTool\config.xml' 'https://github.com/technoluc/winutil/raw/main/office/deploymentconfig.xml' ; iwr -outf 'C:\Program Files\OfficeDeploymentTool\install.cmd' 'https://github.com/technoluc/winutil/raw/main/office/deploymentinstall.cmd' ; iwr -outf 'C:\Program Files\OfficeDeploymentTool\activate.cmd' 'https://github.com/technoluc/winutil/raw/main/office/ActivateOffice21.cmd'"
     }
     
@@ -375,7 +411,12 @@ $WPFinstall.Add_Click({
     # Popup after finished
     $ButtonType = [System.Windows.MessageBoxButton]::OK
     $MessageboxTitle = "Installed Programs "
-    $Messageboxbody = ($wingetResult) 
+    if ( $wingetinstall -eq "Microsoft.OfficeDeploymentTool" ) {
+            $Messageboxbody = ( "Please execute install.cmd as Administrator from C:\Program Files\OfficeDeploymentTool. After installation completes execute activate.cmd" )
+    }
+    else {
+            $Messageboxbody = ($wingetResult)
+    } 
     $MessageIcon = [System.Windows.MessageBoxImage]::Information
 
     [System.Windows.MessageBox]::Show($Messageboxbody,$MessageboxTitle,$ButtonType,$MessageIcon)
@@ -458,10 +499,6 @@ $WPFminimal.Add_Click({
 
 $WPFtweaksbutton.Add_Click({
 
-    If ( $WPFCatBin.IsChecked -eq $true ) {
-        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/script.ps1 | iex"
-        $WPFCatBin.IsChecked = $false
-    }    
     If ( $WPFEssTweaksAH.IsChecked -eq $true ) {
         Write-Host "Disabling Activity History..."
         Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "EnableActivityFeed" -Type DWord -Value 0
@@ -510,7 +547,7 @@ $WPFtweaksbutton.Add_Click({
     If ( $WPFEssTweaksOO.IsChecked -eq $true ) {
         Write-Host "Running O&O Shutup with Recommended Settings"
         Import-Module BitsTransfer
-        Start-BitsTransfer -Source "https://raw.githubusercontent.com/technoluc/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
+        Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
         Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
         ./OOSU10.exe ooshutup10.cfg /quiet
         $WPFEssTweaksOO.IsChecked = $false
