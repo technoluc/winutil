@@ -305,7 +305,7 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("OpenWhisperSystems.Signal")
         $WPFInstallsignal.IsChecked = $false
     }
-     If ( $WPFInstallskype.IsChecked -eq $true ) { 
+    If ( $WPFInstallskype.IsChecked -eq $true ) { 
         $wingetinstall.Add("Microsoft.Skype")
         $WPFInstallskype.IsChecked = $false
     }                               
@@ -321,7 +321,7 @@ $WPFinstall.Add_Click({
         $wingetinstall.Add("TeamViewer.TeamViewer")
         $WPFInstallteamviewer.IsChecked = $false
     }
-     If ( $WPFInstallteams.IsChecked -eq $true ) { 
+    If ( $WPFInstallteams.IsChecked -eq $true ) { 
         $wingetinstall.Add("Microsoft.Teams")
         $WPFInstallteams.IsChecked = $false
     }                        
