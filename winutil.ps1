@@ -460,13 +460,7 @@ $WPFtweaksbutton.Add_Click({
 
     If ( $WPFCatBin.IsChecked -eq $true ) {
         Write-Host "Downloading icons and setting them as empty/full icons"
-        iwr -outf ( New-Item -Path "$env:USERPROFILE\icons\FullCatBin.ico" -Force ) 'https://raw.githubusercontent.com/technoluc/winutil/main/icons/FullCatBin.ico'
-        iwr -outf ( New-Item -Path "$env:USERPROFILE\icons\EmptyCatBin.ico" -Force ) 'https://raw.githubusercontent.com/technoluc/winutil/main/icons/EmptyCatBin.ico'
-        Set-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon\' -Name 'empty' -value '%USERPROFILE%\icons\EmptyCatBin.ico,0'
-        Set-Itemproperty -path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon\' -Name 'full' -value '%USERPROFILE%\icons\FullCatBin.ico,0'
-        New-Item -Path . -Name "catbintestfile.txt" -ItemType "file"
-        Add-Type -AssemblyName Microsoft.VisualBasic
-        [Microsoft.VisualBasic.FileIO.FileSystem]::DeleteFile('catbintestfile.txt','OnlyErrorDialogs','SendToRecycleBin')
+        iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/script.ps1 | iex
         $WPFCatBin.IsChecked = $false
     }    
     If ( $WPFEssTweaksAH.IsChecked -eq $true ) {
