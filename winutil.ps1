@@ -456,7 +456,7 @@ $WPFtweaksbutton.Add_Click({
 
     If ( $WPFBinUtil.IsChecked -eq $true ) {
         Start-Process powershell.exe -Verb RunAs -ArgumentList "-command iwr -useb https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/binutil.ps1 | iex"
-        $WPFCatBin.IsChecked = $false
+        $WPFBinUtil.IsChecked = $false
     }    
     If ( $WPFEssTweaksAH.IsChecked -eq $true ) {
         Write-Host "Disabling Activity History..."
