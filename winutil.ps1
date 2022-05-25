@@ -380,7 +380,7 @@ $WPFinstall.Add_Click({
     })
 
 $WPFInstallUpgrade.Add_Click({
-        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget upgrade --all  | Out-Host" -Wait -WindowStyle Maximized
+        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command winget upgrade --all | Out-Host " -Wait -WindowStyle Maximized
     
         $ButtonType = [System.Windows.MessageBoxButton]::OK
         $MessageboxTitle = "Upgraded All Programs "
