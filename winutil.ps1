@@ -91,6 +91,10 @@ $WPFinstall.Add_Click({
             $wingetinstall.Add("Termius.Termius")
             $WPFInstalltermius.IsChecked = $false
         }
+        If ( $WPFInstallshellexview.IsChecked -eq $true ) { 
+            $wingetinstall.Add("NirSoft.ShellExView")
+            $WPFInstallshellexview.IsChecked = $false
+        }
         If ( $WPFInstalladobe.IsChecked -eq $true ) { 
             $wingetinstall.Add("Adobe.Acrobat.Reader.64-bit")
             $WPFInstalladobe.IsChecked = $false
