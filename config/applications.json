@@ -528,24 +528,19 @@
     "choco": "nvm"
   },
   "WPFInstallnotion": {
-    "winget": "Notion.Notion",
-    "choco": "notion"
+    "winget": "Notion.Notion"
   },
   "WPFInstallplexmp": {
-    "winget": "Plex.PlexMediaPlayer",
-    "choco": "PlexMediaPlayer"
+    "winget": "Plex.PlexMediaPlayer"
   },
   "WPFInstalltermius": {
-    "winget": "Termius.Termius",
-    "choco": "termius"
+    "winget": "Termius.Termius"
   },
   "WPFInstallshellexview": {
-    "winget": "NirSoft.ShellExView",
-    "choco": "ShellExView"
+    "winget": "NirSoft.ShellExView"
   },
   "WPFInstallofficetool": {
-    "winget": "Microsoft.OfficeDeploymentTool",
-    "choco": "OfficeDeploymentTool"
+    "winget": "Microsoft.OfficeDeploymentTool"  
   },
   "WPFInstallpartitionwizard": {
     "winget": "MiniTool.PartitionWizard.Free"
