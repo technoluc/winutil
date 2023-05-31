@@ -2217,7 +2217,6 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                 <CheckBox Name="WPFInstallrevo" Content="RevoUninstaller" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallrufus" Content="Rufus Imager" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallsandboxie" Content="Sandboxie Plus" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallsevenzip" Content="7-Zip" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallshell" Content="Shell (Expanded Context Menu)" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallshellexview" Content="NirSoft ShellExView" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallteamviewer" Content="TeamViewer" Margin="5,0"/>
@@ -2931,10 +2930,6 @@ $sync.configs.applications = '{
   "WPFInstallofficetool": {
     "winget": "Microsoft.OfficeDeploymentTool",
     "choco": "OfficeDeploymentTool"
-  },
-  "WPFInstallsevenzip": {
-    "winget": "7zip.7zip",
-    "choco": "7zip"
   },
   "WPFInstallpartitionwizard": {
     "winget": "MiniTool.PartitionWizard.Free"
