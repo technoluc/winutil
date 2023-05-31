@@ -50,7 +50,7 @@ function Install-WinUtilWinget {
             winget-instal
             
             
-            Start-Process powershell.exe -Verb RunAs -ArgumentList "-command irm https://raw.githubusercontent.com/ChrisTitusTech/winutil/$BranchToUse/winget.ps1 | iex | Out-Host" -WindowStyle Normal -ErrorAction Stop
+            Start-Process powershell.exe -Verb RunAs -ArgumentList "-command irm https://raw.githubusercontent.com/technoluc/winutil/update/winget.ps1 | iex | Out-Host" -WindowStyle Normal -ErrorAction Stop
 
             if(!(Test-WinUtilPackageManager -winget)){
                 break

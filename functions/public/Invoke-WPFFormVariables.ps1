@@ -9,6 +9,7 @@ Function Invoke-WPFFormVariables {
 
 
     Write-Host ""
+    <#
     Write-Host "    CCCCCCCCCCCCCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT   "
     Write-Host " CCC::::::::::::CT:::::::::::::::::::::TT:::::::::::::::::::::T   "
     Write-Host "CC:::::::::::::::CT:::::::::::::::::::::TT:::::::::::::::::::::T  "
@@ -25,8 +26,9 @@ Function Invoke-WPFFormVariables {
     Write-Host "CC:::::::::::::::C       T:::::::::T            T:::::::::T       "
     Write-Host "CCC::::::::::::C         T:::::::::T            T:::::::::T       "
     Write-Host "  CCCCCCCCCCCCC          TTTTTTTTTTT            TTTTTTTTTTT       "
+    #>
     Write-Host ""
-    Write-Host "====Chris Titus Tech====="
+    Write-Host "====TechnoLuc====="
     Write-Host "=====Windows Toolbox====="
 
 

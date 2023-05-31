@@ -308,7 +308,7 @@ function Install-WinUtilWinget {
             winget-instal
             
             
-            Start-Process powershell.exe -Verb RunAs -ArgumentList "-command irm https://raw.githubusercontent.com/ChrisTitusTech/winutil/$BranchToUse/winget.ps1 | iex | Out-Host" -WindowStyle Normal -ErrorAction Stop
+            Start-Process powershell.exe -Verb RunAs -ArgumentList "-command irm https://raw.githubusercontent.com/technoluc/winutil/update/winget.ps1 | iex | Out-Host" -WindowStyle Normal -ErrorAction Stop
 
             if(!(Test-WinUtilPackageManager -winget)){
                 break
@@ -838,7 +838,7 @@ function Invoke-WPFButton {
     Param ([string]$Button) 
 
     #Use this to get the name of the button
-    #[System.Windows.MessageBox]::Show("$Button","Chris Titus Tech's Windows Utility","OK","Info")
+    #[System.Windows.MessageBox]::Show("$Button","TechnoLuc's Windows Utility","OK","Info")
 
     Switch -Wildcard ($Button){
 
@@ -1088,6 +1088,7 @@ Function Invoke-WPFFormVariables {
 
 
     Write-Host ""
+    <# 
     Write-Host "    CCCCCCCCCCCCCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT   "
     Write-Host " CCC::::::::::::CT:::::::::::::::::::::TT:::::::::::::::::::::T   "
     Write-Host "CC:::::::::::::::CT:::::::::::::::::::::TT:::::::::::::::::::::T  "
@@ -1104,8 +1105,9 @@ Function Invoke-WPFFormVariables {
     Write-Host "CC:::::::::::::::C       T:::::::::T            T:::::::::T       "
     Write-Host "CCC::::::::::::C         T:::::::::T            T:::::::::T       "
     Write-Host "  CCCCCCCCCCCCC          TTTTTTTTTTT            TTTTTTTTTTT       "
-    Write-Host ""
-    Write-Host "====Chris Titus Tech====="
+   #> 
+   Write-Host ""
+    Write-Host "====TechnoLuc====="
     Write-Host "=====Windows Toolbox====="
 
 
@@ -1401,7 +1403,7 @@ function Invoke-WPFShortcut {
     Switch ($ShortcutToAdd) {
         "WinUtil" {
             $SourceExe = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" 
-            $IRM = 'irm https://christitus.com/win | iex'
+            $IRM = 'irm https://winutil.technoluc.nl | iex'
             $Powershell = '-ExecutionPolicy Bypass -Command "Start-Process powershell.exe -verb runas -ArgumentList'
             $ArgumentsToSourceExe = "$powershell '$IRM'"
             $DestinationName = "WinUtil.lnk"
@@ -5111,7 +5113,7 @@ $sync.configs.tweaks = '{
   },
   "WPFEssTweaksOO": {
     "InvokeScript": [
-      "curl.exe -s \"https://raw.githubusercontent.com/ChrisTitusTech/winutil/main/ooshutup10_winutil_settings.cfg\" -o $ENV:temp\\ooshutup10.cfg
+      "curl.exe -s \"https://raw.githubusercontent.com/technoluc/winutil/main/ooshutup10_winutil_settings.cfg\" -o $ENV:temp\\ooshutup10.cfg
        curl.exe -s \"https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe\" -o $ENV:temp\\OOSU10.exe
        Start-Process $ENV:temp\\OOSU10.exe -ArgumentList \"$ENV:temp\\ooshutup10.cfg /quiet\"
        "
