@@ -547,10 +547,6 @@
     "winget": "Microsoft.OfficeDeploymentTool",
     "choco": "OfficeDeploymentTool"
   },
-  "WPFInstallsevenzip": {
-    "winget": "7zip.7zip",
-    "choco": "7zip"
-  },
   "WPFInstallpartitionwizard": {
     "winget": "MiniTool.PartitionWizard.Free"
   }
