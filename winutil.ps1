@@ -1223,11 +1223,6 @@ function Invoke-WPFInstall {
         [System.Windows.MessageBox]::Show($WarningMsg, $AppTitle, [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Warning)
         return
     }
-    
-    If ( $WingetInstall -eq "Microsoft.OfficeDeploymentTool" ) {
-        $Messageboxbody = ("Please execute install.cmd as Administrator from C:\Program Files\OfficeDeploymentTool. After installation completes execute activate.cmd")
-        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command iwr -outf 'C:\Program Files\OfficeDeploymentTool\config.xml' 'https://github.com/technoluc/winutil/raw/main/office/deploymentconfig.xml' ; iwr -outf 'C:\Program Files\OfficeDeploymentTool\install.cmd' 'https://github.com/technoluc/winutil/raw/main/office/deploymentinstall.cmd' ; iwr -outf 'C:\Program Files\OfficeDeploymentTool\activate.cmd' 'https://github.com/technoluc/winutil/raw/main/office/ActivateOffice21.cmd'" -Wait
-    }
 
     Invoke-WPFRunspace -ArgumentList $WingetInstall -scriptblock {
         param($WingetInstall)
@@ -1247,6 +1242,11 @@ function Invoke-WPFInstall {
             $MessageIcon = [System.Windows.MessageBoxImage]::Information
         
             [System.Windows.MessageBox]::Show($Messageboxbody, $MessageboxTitle, $ButtonType, $MessageIcon)
+
+        If ( $WingetInstall -eq "Microsoft.OfficeDeploymentTool" ) {
+        # $Messageboxbody = ("Please execute install.cmd as Administrator from C:\Program Files\OfficeDeploymentTool. After installation completes execute activate.cmd")
+        Start-Process powershell.exe -Verb RunAs -ArgumentList "-command iwr -outf 'C:\Program Files\OfficeDeploymentTool\config.xml' 'https://github.com/technoluc/winutil/raw/main/office/deploymentconfig.xml' ; iwr -outf 'C:\Program Files\OfficeDeploymentTool\install.cmd' 'https://github.com/technoluc/winutil/raw/main/office/deploymentinstall.cmd' ; iwr -outf 'C:\Program Files\OfficeDeploymentTool\activate.cmd' 'https://github.com/technoluc/winutil/raw/main/office/ActivateOffice21.cmd'" -Wait
+    }
 
             Write-Host "==========================================="
             Write-Host "--      Installs have finished          ---"
@@ -2920,24 +2920,19 @@ $sync.configs.applications = '{
     "choco": "nvm"
   },
   "WPFInstallnotion": {
-    "winget": "Notion.Notion",
-    "choco": "notion"
+    "winget": "Notion.Notion"
   },
   "WPFInstallplexmp": {
-    "winget": "Plex.PlexMediaPlayer",
-    "choco": "PlexMediaPlayer"
+    "winget": "Plex.PlexMediaPlayer"
   },
   "WPFInstalltermius": {
-    "winget": "Termius.Termius",
-    "choco": "termius"
+    "winget": "Termius.Termius"
   },
   "WPFInstallshellexview": {
-    "winget": "NirSoft.ShellExView",
-    "choco": "ShellExView"
+    "winget": "NirSoft.ShellExView"
   },
   "WPFInstallofficetool": {
-    "winget": "Microsoft.OfficeDeploymentTool",
-    "choco": "OfficeDeploymentTool"
+    "winget": "Microsoft.OfficeDeploymentTool"  
   },
   "WPFInstallpartitionwizard": {
     "winget": "MiniTool.PartitionWizard.Free"
