@@ -527,8 +527,31 @@
     "winget": "CoreyButler.NVMforWindows",
     "choco": "nvm"
   },
-  "WPFInstallpostman": {
-    "winget": "Postman.Postman",
-    "choco": "postman"
+  "WPFInstallnotion": {
+    "winget": "Notion.Notion",
+    "choco": "notion"
+  },
+  "WPFInstallplexmp": {
+    "winget": "Plex.PlexMediaPlayer",
+    "choco": "PlexMediaPlayer"
+  },
+  "WPFInstalltermius": {
+    "winget": "Termius.Termius",
+    "choco": "termius"
+  },
+  "WPFInstallshellexview": {
+    "winget": "NirSoft.ShellExView",
+    "choco": "ShellExView"
+  },
+  "WPFInstallofficetool": {
+    "winget": "Microsoft.OfficeDeploymentTool",
+    "choco": "OfficeDeploymentTool"
+  },
+  "WPFInstallsevenzip": {
+    "winget": "7zip.7zip",
+    "choco": "7zip"
+  },
+  "WPFInstallpartitionwizard": {
+    "winget": "MiniTool.PartitionWizard.Free"
   }
 }
