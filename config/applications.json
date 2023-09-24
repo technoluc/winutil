@@ -1,478 +1,542 @@
-{
+{	
 	"WPFInstall7zip": {
-			"winget": "7zip.7zip",
-			"choco": "7zip"
+		"winget": "7zip.7zip",
+		"choco": "7zip"
 	},
 	"WPFInstalladobe": {
-			"winget": "Adobe.Acrobat.Reader.64-bit",
-			"choco": "adobereader"
+		"winget": "Adobe.Acrobat.Reader.64-bit",
+		"choco": "adobereader"
 	},
 	"WPFInstalladvancedip": {
-			"winget": "Famatech.AdvancedIPScanner",
-			"choco": "advanced-ip-scanner"
-	},
-	"WPFInstallalacritty": {
-			"winget": "Alacritty.Alacritty",
-			"choco": "alacritty"
-	},
-	"WPFInstallanydesk": {
-			"winget": "AnyDeskSoftwareGmbH.AnyDesk",
-			"choco": "anydesk"
+		"winget": "Famatech.AdvancedIPScanner",
+		"choco": "advanced-ip-scanner"
 	},
 	"WPFInstallaudacity": {
-			"winget": "Audacity.Audacity",
-			"choco": "audacity"
+		"winget": "Audacity.Audacity",
+		"choco": "audacity"
 	},
 	"WPFInstallautohotkey": {
-			"winget": "AutoHotkey.AutoHotkey",
-			"choco": "autohotkey"
-	},
-	"WPFInstallbitwarden": {
-			"winget": "Bitwarden.Bitwarden",
-			"choco": "bitwarden"
+		"winget": "AutoHotkey.AutoHotkey",
+		"choco": "autohotkey"
 	},
 	"WPFInstallblender": {
-			"winget": "BlenderFoundation.Blender",
-			"choco": "blender"
+		"winget": "BlenderFoundation.Blender",
+		"choco": "blender"
+	},
+	"WPFInstallbrave": {
+		"winget": "Brave.Brave",
+		"choco": "brave"
 	},
 	"WPFInstallbulkcrapuninstaller": {
-			"winget": "Klocman.BulkCrapUninstaller",
-			"choco": "bulk-crap-uninstaller"
+		"winget": "Klocman.BulkCrapUninstaller",
+		"choco": "bulk-crap-uninstaller"
 	},
 	"WPFInstallchrome": {
-			"winget": "Google.Chrome",
-			"choco": "googlechrome"
-	},
-	"WPFInstallchromium": {
-			"winget": "eloston.ungoogled-chromium",
-			"choco": "chromium"
+		"winget": "Google.Chrome",
+		"choco": "googlechrome"
 	},
 	"WPFInstallcpuz": {
-			"winget": "CPUID.CPU-Z",
-			"choco": "cpu-z"
+		"winget": "CPUID.CPU-Z",
+		"choco": "cpu-z"
 	},
 	"WPFInstallddu": {
-			"winget": "ddu",
-			"choco": "ddu"
+		"winget": "ddu",
+		"choco": "ddu"
 	},
 	"WPFInstalldeluge": {
-			"winget": "DelugeTeam.Deluge",
-			"choco": "deluge"
+		"winget": "DelugeTeam.Deluge",
+		"choco": "deluge"
 	},
 	"WPFInstalldiscord": {
-			"winget": "Discord.Discord",
-			"choco": "discord"
+		"winget": "Discord.Discord",
+		"choco": "discord"
 	},
 	"WPFInstalldockerdesktop": {
-			"winget": "Docker.DockerDesktop",
-			"choco": "docker-desktop"
+		"winget": "Docker.DockerDesktop",
+		"choco": "docker-desktop"
 	},
 	"WPFInstalldotnet3": {
-			"winget": "Microsoft.DotNet.DesktopRuntime.3_1",
-			"choco": "dotnetcore3-desktop-runtime"
+		"winget": "Microsoft.DotNet.DesktopRuntime.3_1",
+		"choco": "dotnetcore3-desktop-runtime"
 	},
 	"WPFInstalldotnet5": {
-			"winget": "Microsoft.DotNet.DesktopRuntime.5",
-			"choco": "dotnet-5.0-runtime"
+		"winget": "Microsoft.DotNet.DesktopRuntime.5",
+		"choco": "dotnet-5.0-runtime"
 	},
 	"WPFInstalldotnet6": {
-			"winget": "Microsoft.DotNet.DesktopRuntime.6",
-			"choco": "dotnet-6.0-runtime"
+		"winget": "Microsoft.DotNet.DesktopRuntime.6",
+		"choco": "dotnet-6.0-runtime"
 	},
 	"WPFInstalleaapp": {
-			"winget": "ElectronicArts.EADesktop",
-			"choco": "ea-app"
+		"winget": "ElectronicArts.EADesktop",
+		"choco": "ea-app"
 	},
 	"WPFInstalledge": {
-			"winget": "Microsoft.Edge",
-			"choco": "microsoft-edge"
+		"winget": "Microsoft.Edge",
+		"choco": "microsoft-edge"
 	},
 	"WPFInstallepicgames": {
-			"winget": "EpicGames.EpicGamesLauncher",
-			"choco": "epicgameslauncher"
+		"winget": "EpicGames.EpicGamesLauncher",
+		"choco": "epicgameslauncher"
 	},
 	"WPFInstallesearch": {
-			"winget": "voidtools.Everything",
-			"choco": "everything"
+		"winget": "voidtools.Everything",
+		"choco": "everything"
 	},
 	"WPFInstalletcher": {
-			"winget": "Balena.Etcher",
-			"choco": "etcher"
+		"winget": "Balena.Etcher",
+		"choco": "etcher"
+	},
+	"WPFInstallflameshot": {
+		"winget": "Flameshot.Flameshot",
+		"choco": "na"
 	},
 	"WPFInstallflux": {
-			"winget": "flux.flux",
-			"choco": "flux"
+		"winget": "flux.flux",
+		"choco": "flux"
 	},
 	"WPFInstallfoxpdf": {
-			"winget": "Foxit.PhantomPDF",
-			"choco": "na"
+		"winget": "Foxit.PhantomPDF",
+		"choco": "na"
 	},
 	"WPFInstallgeforcenow": {
-			"winget": "Nvidia.GeForceNow",
-			"choco": "nvidia-geforce-now"
+		"winget": "Nvidia.GeForceNow",
+		"choco": "nvidia-geforce-now"
 	},
 	"WPFInstallgimp": {
-			"winget": "GIMP.GIMP",
-			"choco": "gimp"
+		"winget": "GIMP.GIMP",
+		"choco": "gimp"
 	},
 	"WPFInstallgit": {
-			"Winget": "Git.Git",
-			"choco": "git"
+		"Winget": "Git.Git",
+		"choco": "git"
 	},
 	"WPFInstallgithubdesktop": {
-			"winget": "Git.Git;GitHub.GitHubDesktop",
-			"choco": "git;github-desktop"
+		"winget": "Git.Git;GitHub.GitHubDesktop",
+		"choco": "git;github-desktop"
 	},
 	"WPFInstallglaryutilities": {
-			"Winget": "Glarysoft.GlaryUtilities",
-			"choco": "glaryutilities-free"
+		"Winget": "Glarysoft.GlaryUtilities",
+		"choco": "glaryutilities-free"
 	},
 	"WPFInstallgog": {
-			"winget": "GOG.Galaxy",
-			"choco": "goggalaxy"
+		"winget": "GOG.Galaxy",
+		"choco": "goggalaxy"
 	},
 	"WPFInstallgolang": {
-			"Winget": "GoLang.Go",
-			"choco": "golang"
+		"Winget": "GoLang.Go",
+		"choco": "golang"
 	},
 	"WPFInstallgpuz": {
-			"winget": "TechPowerUp.GPU-Z",
-			"choco": "gpu-z"
+		"winget": "TechPowerUp.GPU-Z",
+		"choco": "gpu-z"
 	},
 	"WPFInstallgreenshot": {
-			"winget": "Greenshot.Greenshot",
-			"choco": "greenshot"
+		"winget": "Greenshot.Greenshot",
+		"choco": "greenshot"
 	},
 	"WPFInstallgsudo": {
-			"winget": "gerardog.gsudo",
-			"choco": "gsudo"
+		"winget": "gerardog.gsudo",
+		"choco": "gsudo"
 	},
 	"WPFInstallhandbrake": {
-			"winget": "HandBrake.HandBrake",
-			"choco": "handbrake"
+		"winget": "HandBrake.HandBrake",
+		"choco": "handbrake"
 	},
 	"WPFInstallheroiclauncher": {
-			"winget": "HeroicGamesLauncher.HeroicGamesLauncher",
-			"choco": "na"
+		"winget": "HeroicGamesLauncher.HeroicGamesLauncher",
+		"choco": "na"
 	},
 	"WPFInstallhwinfo": {
-			"winget": "REALiX.HWiNFO",
-			"choco": "hwinfo"
+		"winget": "REALiX.HWiNFO",
+		"choco": "hwinfo"
 	},
 	"WPFInstallimageglass": {
-			"winget": "DuongDieuPhap.ImageGlass",
-			"choco": "imageglass"
+		"winget": "DuongDieuPhap.ImageGlass",
+		"choco": "imageglass"
 	},
 	"WPFInstallinkscape": {
-			"winget": "Inkscape.Inkscape",
-			"choco": "inkscape"
+		"winget": "Inkscape.Inkscape",
+		"choco": "inkscape"
 	},
 	"WPFInstallitunes": {
-			"winget": "Apple.iTunes",
-			"choco": "itunes"
+		"winget": "Apple.iTunes",
+		"choco": "itunes"
 	},
 	"WPFInstalljava8": {
-			"winget": "EclipseAdoptium.Temurin.8.JRE",
-			"choco": "temurin8jre"
+		"winget": "EclipseAdoptium.Temurin.8.JRE",
+		"choco": "temurin8jre"
 	},
 	"WPFInstalljava11": {
-			"winget": "EclipseAdoptium.Temurin.11.JRE",
-			"choco": "javaruntime"
+		"winget": "EclipseAdoptium.Temurin.11.JRE",
+		"choco": "javaruntime"
 	},
 	"WPFInstalljava16": {
-			"winget": "AdoptOpenJDK.OpenJDK.16",
-			"choco": "temurin16jre"
+		"winget": "AdoptOpenJDK.OpenJDK.16",
+		"choco": "temurin16jre"
 	},
 	"WPFInstalljava17": {
-			"winget": "EclipseAdoptium.Temurin.17.JRE",
-			"choco": "temurin17jre"
+		"winget": "EclipseAdoptium.Temurin.17.JRE",
+		"choco": "temurin17jre"
 	},
 	"WPFInstalljava18": {
-			"winget": "EclipseAdoptium.Temurin.18.JRE",
-			"choco": "temurin18jre"
+		"winget": "EclipseAdoptium.Temurin.18.JRE",
+		"choco": "temurin18jre"
 	},
 	"WPFInstalljava19": {
-			"winget": "EclipseAdoptium.Temurin.19.JRE",
-			"choco": "temurin19jre"
+		"winget": "EclipseAdoptium.Temurin.19.JRE",
+		"choco": "temurin19jre"
 	},
 	"WPFInstalljava20": {
-			"winget": "Azul.Zulu.20.JDK",
-			"choco": "na"
+		"winget": "Azul.Zulu.20.JDK",
+		"choco": "na"
 	},
 	"WPFInstalljdownloader": {
-			"winget": "AppWork.JDownloader",
-			"choco": "jdownloader"
+		"winget": "AppWork.JDownloader",
+		"choco": "jdownloader"
 	},
 	"WPFInstalljetbrains": {
-			"winget": "JetBrains.Toolbox",
-			"choco": "jetbrainstoolbox"
+		"winget": "JetBrains.Toolbox",
+		"choco": "jetbrainstoolbox"
 	},
 	"WPFInstalljoplin": {
-			"winget": "Joplin.Joplin",
-			"choco": "joplin"
+		"winget": "Joplin.Joplin",
+		"choco": "joplin"
 	},
 	"WPFInstallkeepass": {
-			"winget": "KeePassXCTeam.KeePassXC",
-			"choco": "keepassxc"
+		"winget": "KeePassXCTeam.KeePassXC",
+		"choco": "keepassxc"
 	},
 	"WPFInstallkodi": {
-			"winget": "XBMCFoundation.Kodi",
-			"choco": "kodi"
+		"winget": "XBMCFoundation.Kodi",
+		"choco": "kodi"
 	},
 	"WPFInstallkrita": {
-			"winget": "KDE.Krita",
-			"choco": "krita"
+		"winget": "KDE.Krita",
+		"choco": "krita"
 	},
 	"WPFInstalllibreoffice": {
-			"winget": "TheDocumentFoundation.LibreOffice",
-			"choco": "libreoffice-fresh"
+		"winget": "TheDocumentFoundation.LibreOffice",
+		"choco": "libreoffice-fresh"
 	},
 	"WPFInstallmalwarebytes": {
-			"winget": "Malwarebytes.Malwarebytes",
-			"choco": "malwarebytes"
+		"winget": "Malwarebytes.Malwarebytes",
+		"choco": "malwarebytes"
 	},
 	"WPFInstallmonitorian": {
-			"winget": "emoacht.Monitorian",
-			"choco": "monitorian"
+		"winget": "emoacht.Monitorian",
+		"choco": "monitorian"
 	},
 	"WPFInstallmpc": {
-			"winget": "clsid2.mpc-hc",
-			"choco": "mpc-hc"
+		"winget": "clsid2.mpc-hc",
+		"choco": "mpc-hc"
 	},
 	"WPFInstallmremoteng": {
-			"winget": "mRemoteNG.mRemoteNG",
-			"choco": "mremoteng"
+		"winget": "mRemoteNG.mRemoteNG",
+		"choco": "mremoteng"
 	},
-	"WPFInstallmsteam": {
-			"winget": "Microsoft.Teams",
-			"choco": "microsoft-teams"
+	"WPFInstallnanazip": {
+		"winget": "M2Team.NanaZip",
+		"choco": "nanazip"
 	},
-	"WPFInstallnexus": {
-			"winget": "ReFX.Nexus",
-			"choco": "na"
+	"WPFInstallnano": {
+		"winget": "GNU.Nano",
+		"choco": "nano"
 	},
-	"WPFInstallnordvpn": {
-			"winget": "NordVPN.NordVPN",
-			"choco": "nordvpn"
+	"WPFInstallnaps2": {
+		"winget": "Cyanfish.NAPS2",
+		"choco": "naps2"
 	},
-	"WPFInstallnotion": {
-			"winget": "Notion.Notion",
-			"choco": "notion"
+	"WPFInstallneovim": {
+		"winget": "Neovim.Neovim",
+		"choco": "neovim"
 	},
-	"WPFInstallobsstudio": {
-			"winget": "OBSProject.OBSStudio",
-			"choco": "obs-studio"
+	"WPFInstallnodejs": {
+		"winget": "OpenJS.NodeJS",
+		"choco": "nodejs"
 	},
-	"WPFInstallopenra": {
-			"winget": "OpenRA.OpenRA",
-			"choco": "openra"
+	"WPFInstallnodejslts": {
+		"winget": "OpenJS.NodeJS.LTS",
+		"choco": "nodejs-lts"
 	},
-	"WPFInstallopenvpn": {
-			"winget": "OpenVPN.OpenVPN",
-			"choco": "openvpn"
+	"WPFInstallnomacs": {
+		"winget": "nomacs.nomacs",
+		"choco": "nomacs"
 	},
-	"WPFInstallopenvpnconnect": {
-			"winget": "OpenVPN.Connect",
-			"choco": "na"
+	"WPFInstallnotepadplus": {
+		"winget": "Notepad++.Notepad++",
+		"choco": "notepadplusplus"
 	},
-	"WPFInstallopenvpnui": {
-			"winget": "OpenVPN.OpenVPN-GUI",
-			"choco": "openvpn-gui"
+	"WPFInstallnuget": {
+		"winget": "Microsoft.NuGet",
+		"choco": "nuget.commandline"
 	},
-	"WPFInstallopus": {
-			"winget": "FaiYufukoro.OpusAudioCodec",
-			"choco": "opus"
+	"WPFInstallnvclean": {
+		"winget": "TechPowerUp.NVCleanstall",
+		"choco": "na"
 	},
-	"WPFInstallpaintnet": {
-			"winget": "dotPDNLLC.Paint.NET",
-			"choco": "paint.net"
+	"WPFInstallnvm": {
+		"winget": "CoreyButler.NVMforWindows",
+		"choco": "nvm"
 	},
-	"WPFInstallpandoc": {
-			"winget": "Pandoc.Pandoc",
-			"choco": "pandoc"
+	"WPFInstallobs": {
+		"winget": "OBSProject.OBSStudio",
+		"choco": "obs-studio"
 	},
-	"WPFInstallpandocciteproc": {
-			"winget": "Pandoc.Pandoc.Citeproc",
-			"choco": "pandoc-citeproc"
+	"WPFInstallobsidian": {
+		"winget": "Obsidian.Obsidian",
+		"choco": "obsidian"
 	},
-	"WPFInstallpeek": {
-			"winget": "Peek.Peek",
-			"choco": "peek"
+	"WPFInstallokular": {
+		"winget": "KDE.Okular",
+		"choco": "okular"
+	},
+	"WPFInstallonedrive": {
+		"winget": "Microsoft.OneDrive",
+		"choco": "onedrive"
+	},
+	"WPFInstallonlyoffice": {
+		"winget": "ONLYOFFICE.DesktopEditors",
+		"choco": "onlyoffice"
+	},
+	"WPFInstallopenoffice": {
+		"winget": "Apache.OpenOffice",
+		"choco": "openoffice"
+	},
+	"WPFInstallopenshell": {
+		"winget": "Open-Shell.Open-Shell-Menu",
+		"choco": "open-shell"
+	},
+	"WPFInstallpeazip": {
+		"winget": "Giorgiotani.Peazip",
+		"choco": "peazip"
+	},
+	"WPFInstallpostman": {
+		"winget": "Postman.Postman",
+		"choco": "postman"
+	},
+	"WPFInstallpowershell": {
+		"winget": "Microsoft.PowerShell",
+		"choco": "powershell-core"
+	},
+	"WPFInstallpowertoys": {
+		"winget": "Microsoft.PowerToys",
+		"choco": "powertoys"
+	},
+	"WPFInstallprismlauncher": {
+		"winget": "PrismLauncher.PrismLauncher",
+		"choco": "na"
+	},
+	"WPFInstallprocesslasso": {
+		"winget": "BitSum.ProcessLasso",
+		"choco": "plasso"
+	},
+	"WPFInstallprocessmonitor": {
+		"winget": "Microsoft.Sysinternals.ProcessMonitor",
+		"choco": "procexp"
+	},
+	"WPFInstallputty": {
+		"winget": "PuTTY.PuTTY",
+		"choco": "putty"
+	},
+	"WPFInstallpython3": {
+		"winget": "Python.Python.3.11",
+		"choco": "python"
 	},
 	"WPFInstallqbittorrent": {
-			"winget": "qBittorrent.qBittorrent",
-			"choco": "qbittorrent"
+		"winget": "qBittorrent.qBittorrent",
+		"choco": "qbittorrent"
 	},
-	"WPFInstallquicklook": {
-			"winget": "QL-Win.QuickLook",
-			"choco": "quicklook"
+	"WPFInstallrevo": {
+		"winget": "RevoUninstaller.RevoUninstaller",
+		"choco": "revo-uninstaller"
 	},
 	"WPFInstallrufus": {
-			"winget": "PeteBatard.Rufus",
-			"choco": "rufus"
+		"winget": "Rufus.Rufus",
+		"choco": "rufus"
 	},
-	"WPFInstallsnagit": {
-			"winget": "TechSmith.Snagit",
-			"choco": "snagit"
+	"WPFInstallrustdesk": {
+		"winget": "RustDesk.RustDesk",
+		"choco": "rustdesk.portable"
 	},
-	"WPFInstallsnipaste": {
-			"winget": "Snipaste.Snipaste",
-			"choco": "snipaste"
+	"WPFInstallrustlang": {
+		"Winget": "Rustlang.Rust.MSVC",
+		"choco": "rust"
 	},
-	"WPFInstallspace": {
-			"winget": "Microsoft.WindowsTerminal",
-			"choco": "microsoft-windows-terminal"
+	"WPFInstallsandboxie": {
+		"winget": "Sandboxie.Plus",
+		"choco": "sandboxie"
 	},
-	"WPFInstallspeedfan": {
-			"winget": "Alfredo.Comparetti.SpeedFan",
-			"choco": "speedfan"
+	"WPFInstallsdio": {
+		"winget": "GlennDelahoy.SnappyDriverInstallerOrigin",
+		"choco": "sdio"
 	},
-	"WPFInstallsplitter": {
-			"winget": "Microsoft.PowerToys",
-			"choco": "powertoys"
+	"WPFInstallsharex": {
+		"winget": "ShareX.ShareX",
+		"choco": "sharex"
 	},
-	"WPFInstallsportify": {
-			"winget": "Spotify.Spotify",
-			"choco": "spotify"
+	"WPFInstallshell": {
+		"winget": "Nilesoft.Shell",
+		"choco": "na"
 	},
-	"WPFInstallsquid": {
-			"winget": "Squid.Squid",
-			"choco": "na"
+	"WPFInstallsignal": {
+		"winget": "OpenWhisperSystems.Signal",
+		"choco": "signal"
 	},
-	"WPFInstallsquirrel": {
-			"winget": "Microsoft.Squirrel",
-			"choco": "na"
+	"WPFInstallsimplewall": {
+		"Winget": "Henry++.simplewall",
+		"choco": "simplewall"
 	},
-	"WPFInstallsstool": {
-			"winget": "NaughtySquirrel.SSTool",
-			"choco": "sstool"
+	"WPFInstallskype": {
+		"winget": "Microsoft.Skype",
+		"choco": "skype"
+	},
+	"WPFInstallslack": {
+		"winget": "SlackTechnologies.Slack",
+		"choco": "slack"
+	},
+	"WPFInstallsqlstudio": {
+		"winget": "Microsoft.SQLServerManagementStudio",
+		"choco": "sql-server-management-studio"
 	},
 	"WPFInstallsteam": {
-			"winget": "Valve.Steam",
-			"choco": "steam"
+		"winget": "Valve.Steam",
+		"choco": "steam-client"
 	},
-	"WPFInstallsumatrapdf": {
-			"winget": "KrzysztofKowalczyk.SumatraPDF",
-			"choco": "sumatrapdf"
+	"WPFInstallstrawberry": {
+		"winget": "StrawberryMusicPlayer.Strawberry",
+		"choco": "strawberrymusicplayer"
 	},
-	"WPFInstallsynergy": {
-			"winget": "Symless.Synergy",
-			"choco": "synergy"
+	"WPFInstallsublime": {
+		"winget": "SublimeHQ.SublimeText.4",
+		"choco": "sublimetext4"
 	},
-	"WPFInstallsyncthing": {
-			"winget": "Syncthing.Syncthing",
-			"choco": "syncthing"
+	"WPFInstallsumatra": {
+		"winget": "SumatraPDF.SumatraPDF",
+		"choco": "sumatrapdf"
 	},
-	"WPFInstallsysinternals": {
-			"winget": "SysinternalsSuite.SysinternalsSuite",
-			"choco": "sysinternals"
+	"WPFInstalltcpview": {
+		"winget": "Microsoft.Sysinternals.TCPView",
+		"choco": "tcpview"
 	},
-	"WPFInstallteamspeak": {
-			"winget": "TeamSpeak.TeamSpeak",
-			"choco": "teamspeak"
+	"WPFInstallteams": {
+		"winget": "Microsoft.Teams",
+		"choco": "microsoft-teams"
+	},
+	"WPFInstallteamviewer": {
+		"winget": "TeamViewer.TeamViewer",
+		"choco": "teamviewer9"
 	},
 	"WPFInstalltelegram": {
-			"winget": "Telegram.Telegram",
-			"choco": "telegram"
+		"winget": "Telegram.TelegramDesktop",
+		"choco": "telegram"
 	},
-	"WPFInstallterminus": {
-			"winget": "Microsoft.Terminus",
-			"choco": "terminus"
+	"WPFInstallterminal": {
+		"winget": "Microsoft.WindowsTerminal",
+		"choco": "microsoft-windows-terminal"
 	},
-	"WPFInstallthunderbird": {
-			"winget": "Mozilla.Thunderbird",
-			"choco": "thunderbird"
+	"WPFInstalltor": {
+		"Winget": "TorProject.TorBrowser",
+		"choco": "tor-browser"
 	},
-	"WPFInstalltransmission": {
-			"winget": "Transmission.Remote",
-			"choco": "transmission"
+	"WPFInstalltreesize": {
+		"winget": "JAMSoftware.TreeSize.Free",
+		"choco": "treesizefree"
 	},
-	"WPFInstallunrealengine": {
-			"winget": "EpicGames.UnrealEngine",
-			"choco": "unrealengine"
+	"WPFInstallttaskbar": {
+		"winget": "9PF4KZ2VN4W9",
+		"choco": "translucenttb"
 	},
-	"WPFInstallvcxsrv": {
-			"winget": "Xming.VcXsrv",
-			"choco": "vcxsrv"
+	"WPFInstalltwinkletray": {
+		"Winget": "xanderfrangos.twinkletray",
+		"choco": "na"
+	},
+	"WPFInstalltidal": {
+		"Winget": "9NNCB5BS59PH",
+		"choco": "na"
+	},	
+	"WPFInstallubisoft": {
+		"winget": "Ubisoft.Connect",
+		"choco": "ubisoft-connect"
+	},
+	"WPFInstallunity": {
+		"winget": "Unity.UnityHub",
+		"choco": "unityhub"
+	},
+	"WPFInstallvc2015_32": {
+		"winget": "Microsoft.VCRedist.2015+.x86",
+		"choco": "na"
+	},
+	"WPFInstallvc2015_64": {
+		"winget": "Microsoft.VCRedist.2015+.x64",
+		"choco": "na"
+	},
+	"WPFInstallviber": {
+		"Winget": "Viber.Viber",
+		"choco": "viber"
+	},
+	"WPFInstallvisualstudio": {
+		"winget": "Microsoft.VisualStudio.2022.Community",
+		"choco": "visualstudio2022community"
+	},
+	"WPFInstallvivaldi": {
+		"winget": "VivaldiTechnologies.Vivaldi",
+		"choco": "vivaldi"
 	},
 	"WPFInstallvlc": {
-			"winget": "videolan.vlc",
-			"choco": "vlc"
+		"winget": "VideoLAN.VLC",
+		"choco": "vlc"
+	},
+	"WPFInstallvoicemeeter": {
+		"winget": "VB-Audio.Voicemeeter",
+		"choco": "voicemeeter"
 	},
 	"WPFInstallvscode": {
-			"winget": "Microsoft.VisualStudioCode",
-			"choco": "visualstudiocode"
+		"winget": "Git.Git;Microsoft.VisualStudioCode",
+		"choco": "vscode"
 	},
-	"WPFInstallvscodedocker": {
-			"winget": "Microsoft.VisualStudioCode.Docker",
-			"choco": "visualstudiocode-docker"
+	"WPFInstallvscodium": {
+		"winget": "Git.Git;VSCodium.VSCodium",
+		"choco": "vscodium"
 	},
-	"WPFInstallvscodems": {
-			"winget": "Microsoft.VisualStudioCode.1.56.2",
-			"choco": "visualstudiocode-1.56.2"
+	"WPFInstallwaterfox": {
+		"winget": "Waterfox.Waterfox",
+		"choco": "waterfox"
 	},
-	"WPFInstallvscodemssql": {
-			"winget": "Microsoft.VisualStudioCode.MSSQL",
-			"choco": "visualstudiocode-mssql"
+	"WPFInstallwindirstat": {
+		"winget": "WinDirStat.WinDirStat",
+		"choco": "windirstat"
 	},
-	"WPFInstallvscoderemote": {
-			"winget": "Microsoft.VisualStudioCode.Remote-WSL",
-			"choco": "visualstudiocode-remote-wsl"
+	"WPFInstallwingetui": {
+		"winget": "SomePythonThings.WingetUIStore",
+		"choco": "na"
 	},
-	"WPFInstallvscodertl": {
-			"winget": "Microsoft.VisualStudioCode.RTL",
-			"choco": "visualstudiocode-rtl"
+	"WPFInstallwinmerge": {
+		"winget": "WinMerge.WinMerge",
+		"choco": "winmerge"
 	},
-	"WPFInstallvscodets": {
-			"winget": "Microsoft.VisualStudioCode.Typescript",
-			"choco": "visualstudiocode-typescript"
+	"WPFInstallwinrar": {
+		"winget": "RARLab.WinRAR",
+		"choco": "winrar"
 	},
-	"WPFInstallvscodewin64": {
-			"winget": "Microsoft.VisualStudioCode.Win64",
-			"choco": "visualstudiocode-win64"
+	"WPFInstallwinscp": {
+		"winget": "WinSCP.WinSCP",
+		"choco": "winscp"
 	},
-	"WPFInstallvscodewsl": {
-			"winget": "Microsoft.VisualStudioCode.WSL",
-			"choco": "visualstudiocode-wsl"
-	},
-	"WPFInstallvscodewsldevcontainers": {
-			"winget": "Microsoft.VisualStudioCode.WSL-dev-containers",
-			"choco": "visualstudiocode-wsl-dev-containers"
-	},
-	"WPFInstallvscodex64": {
-			"winget": "Microsoft.VisualStudioCode.x64",
-			"choco": "visualstudiocode-x64"
-	},
-	"WPFInstallvvvvvv": {
-			"winget": "TerryCavanagh.VVVVVV",
-			"choco": "na"
+	"WPFInstallwireshark": {
+		"winget": "WiresharkFoundation.Wireshark",
+		"choco": "wireshark"
 	},
 	"WPFInstallwiztree": {
-			"winget": "wiztree.wiztree",
-			"choco": "wiztree"
+		"Winget": "AntibodySoftware.WizTree",
+		"choco": "wiztree"
 	},
-	"WPFInstallwkhtmltopdf": {
-			"winget": "wkhtmltopdf.wkhtmltopdf",
-			"choco": "wkhtmltopdf"
+	"WPFInstallxdm": {
+		"winget": "subhra74.XtremeDownloadManager",
+		"choco": "xdm"
 	},
-	"WPFInstallwmplayer": {
-			"winget": "Microsoft.WindowsMediaPlayer",
-			"choco": "windows-media-player"
-	},
-	"WPFInstallwsl": {
-			"winget": "Microsoft.WindowsSubsystemForLinux",
-			"choco": "wsl"
-	},
-	"WPFInstallwxpython": {
-			"winget": "wxPython.Python",
-			"choco": "wxpython"
-	},
-	"WPFInstallytdl": {
-			"winget": "ytdl-org.ytdl",
-			"choco": "youtube-dl"
-	},
-	"WPFInstallzettlr": {
-			"winget": "Zettlr.Zettlr",
-			"choco": "zettlr"
+	"WPFInstallzoom": {
+		"winget": "Zoom.Zoom",
+		"choco": "zoom"
 	}
 }
