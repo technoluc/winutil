@@ -2419,32 +2419,19 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                 <Label Content="Multimedia Tools" FontSize="16" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallaudacity" Content="Audacity" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallblender" Content="Blender (3D Graphics)" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallcider" Content="Cider (FOSS Music Player)" Margin="5,0"/>
-                                <CheckBox Name="WPFInstalleartrumpet" Content="Eartrumpet (Audio)" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallflameshot" Content="Flameshot (Screenshots)" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallfoobar" Content="Foobar2000 (Music Player)" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallgimp" Content="GIMP (Image Editor)" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallgreenshot" Content="Greenshot (Screenshots)" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallhandbrake" Content="HandBrake" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallimageglass" Content="ImageGlass (Image Viewer)" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallinkscape" Content="Inkscape" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallitunes" Content="iTunes" Margin="5,0"/>
-                                <CheckBox Name="WPFInstalljellyfinmediaplayer" Content="Jellyfin Media Player" Margin="5,0"/>
-                                <CheckBox Name="WPFInstalljellyfinserver" Content="Jellyfin Server" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallkdenlive" Content="Kdenlive (Video Editor)" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallkodi" Content="Kodi Media Center" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallklite" Content="K-Lite Codec Standard" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallkrita" Content="Krita (Image Editor)" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallmusicbee" Content="MusicBee (Music Player)" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallmpc" Content="Media Player Classic (Video Player)" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallnglide" Content="nGlide (3dfx compatibility)" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallnomacs" Content="Nomacs (Image viewer)" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallobs" Content="OBS Studio" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallsharex" Content="ShareX (Screenshots)" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallstrawberry" Content="Strawberry (Music Player)" Margin="5,0"/>
-                                <CheckBox Name="WPFInstalltidal" Content="Tidal" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallvlc" Content="VLC (Video Player)" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallvoicemeeter" Content="Voicemeeter (Audio)" Margin="5,0"/>
 
                                 <Label Content="Pro Tools" FontSize="16" Margin="5,0"/>
                                 <CheckBox Name="WPFInstalladvancedip" Content="Advanced IP Scanner" Margin="5,0"/>
@@ -2709,10 +2696,6 @@ $sync.configs.applications = '{
 			"winget": "eloston.ungoogled-chromium",
 			"choco": "chromium"
 	},
-	"WPFInstallcider": {
-			"winget": "CiderCollective.Cider",
-			"choco": "cider"
-	},
 	"WPFInstallcpuz": {
 			"winget": "CPUID.CPU-Z",
 			"choco": "cpu-z"
@@ -2749,10 +2732,6 @@ $sync.configs.applications = '{
 			"winget": "ElectronicArts.EADesktop",
 			"choco": "ea-app"
 	},
-	"WPFInstalleartrumpet": {
-			"winget": "File-New-Project.EarTrumpet",
-			"choco": "eartrumpet"
-	},
 	"WPFInstalledge": {
 			"winget": "Microsoft.Edge",
 			"choco": "microsoft-edge"
@@ -2769,17 +2748,9 @@ $sync.configs.applications = '{
 			"winget": "Balena.Etcher",
 			"choco": "etcher"
 	},
-	"WPFInstallflameshot": {
-			"winget": "Flameshot.Flameshot",
-			"choco": "na"
-	},
 	"WPFInstallflux": {
 			"winget": "flux.flux",
 			"choco": "flux"
-	},
-	"WPFInstallfoobar": {
-			"winget": "PeterPawlowski.foobar2000",
-			"choco": "foobar2000"
 	},
 	"WPFInstallfoxpdf": {
 			"winget": "Foxit.PhantomPDF",
@@ -2889,17 +2860,9 @@ $sync.configs.applications = '{
 			"winget": "Joplin.Joplin",
 			"choco": "joplin"
 	},
-	"WPFInstallkdenlive": {
-			"Winget": "KDE.Kdenlive",
-			"choco": "kdenlive"
-	},
 	"WPFInstallkeepass": {
 			"winget": "KeePassXCTeam.KeePassXC",
 			"choco": "keepassxc"
-	},
-	"WPFInstallklite": {
-			"winget": "CodecGuide.K-LiteCodecPack.Standard",
-			"choco": "k-litecodecpack-standard"
 	},
 	"WPFInstallkodi": {
 			"winget": "XBMCFoundation.Kodi",
@@ -2932,10 +2895,6 @@ $sync.configs.applications = '{
 	"WPFInstallmsteam": {
 			"winget": "Microsoft.Teams",
 			"choco": "microsoft-teams"
-	},
-	"WPFInstallmusicbee": {
-			"winget": "StevenMayall.MusicBee",
-			"choco": "musicbee"
 	},
 	"WPFInstallnexus": {
 			"winget": "ReFX.Nexus",
