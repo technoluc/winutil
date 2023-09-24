@@ -259,23 +259,14 @@
                                 <CheckBox Name="WPFInstallchrome" Content="Chrome" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallchromium" Content="Chromium" Margin="5,0"/>
                                 <CheckBox Name="WPFInstalledge" Content="Edge" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallfirefox" Content="Firefox" Margin="5,0"/>
-                                <CheckBox Name="WPFInstalllibrewolf" Content="LibreWolf" Margin="5,0"/>
                                 <CheckBox Name="WPFInstalltor" Content="Tor Browser" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallvivaldi" Content="Vivaldi" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallwaterfox" Content="Waterfox" Margin="5,0"/>
 
                                 <Label Content="Communications" FontSize="16" Margin="5,0"/>
                                 <CheckBox Name="WPFInstalldiscord" Content="Discord" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallhexchat" Content="Hexchat" Margin="5,0"/>
-                                <CheckBox Name="WPFInstalljami" Content="Jami" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallmatrix" Content="Matrix" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallsignal" Content="Signal" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallskype" Content="Skype" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallslack" Content="Slack" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallteams" Content="Teams" Margin="5,0"/>
                                 <CheckBox Name="WPFInstalltelegram" Content="Telegram" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallviber" Content="Viber" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallzoom" Content="Zoom" Margin="5,0"/>
                             </StackPanel>
                             <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Row="1" Grid.Column="1" Margin="10">
@@ -295,9 +286,7 @@
                                 <CheckBox Name="WPFInstalljava16" Content="OpenJDK Java 16" Margin="5,0"/>
                                 <CheckBox Name="WPFInstalljava18" Content="Oracle Java 18" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallpython3" Content="Python3" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallpostman" Content="Postman" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallrustlang" Content="Rust" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallsublime" Content="Sublime" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallunity" Content="Unity Game Engine" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallvisualstudio" Content="Visual Studio 2022" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallvscode" Content="VS Code" Margin="5,0"/>
@@ -312,7 +301,6 @@
                                 <CheckBox Name="WPFInstallnaps2" Content="NAPS2 (Document Scanner)" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallnotepadplus" Content="Notepad++" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallobsidian" Content="Obsidian" Margin="5,0"/>
-                                <CheckBox Name="WPFInstallokular" Content="Okular" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallonlyoffice" Content="ONLYOffice Desktop" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallsumatra" Content="Sumatra PDF" Margin="5,0"/>
                                 <CheckBox Name="WPFInstallwinmerge" Content="WinMerge" Margin="5,0"/>
