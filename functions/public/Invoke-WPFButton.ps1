@@ -45,10 +45,13 @@ function Invoke-WPFButton {
         "WPFPanelsystem" {Invoke-WPFControlPanel -Panel $button}
         "WPFPaneluser" {Invoke-WPFControlPanel -Panel $button}
         "WPFUpdatesdefault" {Invoke-WPFUpdatesdefault}
+        "WPFBindefault" {Invoke-WPFUpdatesdefault}        
         "WPFFixesUpdate" {Invoke-WPFFixesUpdate}
         "WPFFixesNetwork" {Invoke-WPFFixesNetwork}
         "WPFUpdatesdisable" {Invoke-WPFUpdatesdisable}
         "WPFUpdatessecurity" {Invoke-WPFUpdatessecurity}
+        "WPFBindisable" {Invoke-WPFUpdatesdisable}
+        "WPFBinsecurity" {Invoke-WPFUpdatessecurity}
         "WPFWinUtilShortcut" {Invoke-WPFShortcut -ShortcutToAdd "WinUtil"}
         "WPFGetInstalled" {Invoke-WPFGetInstalled -CheckBox "winget"}
         "WPFGetInstalledTweaks" {Invoke-WPFGetInstalled -CheckBox "tweaks"}
