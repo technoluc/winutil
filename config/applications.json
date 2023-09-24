@@ -47,10 +47,6 @@
 			"winget": "eloston.ungoogled-chromium",
 			"choco": "chromium"
 	},
-	"WPFInstallcider": {
-			"winget": "CiderCollective.Cider",
-			"choco": "cider"
-	},
 	"WPFInstallcpuz": {
 			"winget": "CPUID.CPU-Z",
 			"choco": "cpu-z"
@@ -87,10 +83,6 @@
 			"winget": "ElectronicArts.EADesktop",
 			"choco": "ea-app"
 	},
-	"WPFInstalleartrumpet": {
-			"winget": "File-New-Project.EarTrumpet",
-			"choco": "eartrumpet"
-	},
 	"WPFInstalledge": {
 			"winget": "Microsoft.Edge",
 			"choco": "microsoft-edge"
@@ -107,17 +99,9 @@
 			"winget": "Balena.Etcher",
 			"choco": "etcher"
 	},
-	"WPFInstallflameshot": {
-			"winget": "Flameshot.Flameshot",
-			"choco": "na"
-	},
 	"WPFInstallflux": {
 			"winget": "flux.flux",
 			"choco": "flux"
-	},
-	"WPFInstallfoobar": {
-			"winget": "PeterPawlowski.foobar2000",
-			"choco": "foobar2000"
 	},
 	"WPFInstallfoxpdf": {
 			"winget": "Foxit.PhantomPDF",
@@ -227,17 +211,9 @@
 			"winget": "Joplin.Joplin",
 			"choco": "joplin"
 	},
-	"WPFInstallkdenlive": {
-			"Winget": "KDE.Kdenlive",
-			"choco": "kdenlive"
-	},
 	"WPFInstallkeepass": {
 			"winget": "KeePassXCTeam.KeePassXC",
 			"choco": "keepassxc"
-	},
-	"WPFInstallklite": {
-			"winget": "CodecGuide.K-LiteCodecPack.Standard",
-			"choco": "k-litecodecpack-standard"
 	},
 	"WPFInstallkodi": {
 			"winget": "XBMCFoundation.Kodi",
@@ -270,10 +246,6 @@
 	"WPFInstallmsteam": {
 			"winget": "Microsoft.Teams",
 			"choco": "microsoft-teams"
-	},
-	"WPFInstallmusicbee": {
-			"winget": "StevenMayall.MusicBee",
-			"choco": "musicbee"
 	},
 	"WPFInstallnexus": {
 			"winget": "ReFX.Nexus",
