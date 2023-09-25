@@ -2482,10 +2482,10 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <!-- <Grid.RowDefinitions>
+                            <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions> -->
-                            <StackPanel Grid.Column="0" Margin="10,5">
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Column="0" Grid.Row="0" Margin="10,5">
                                 <!-- Voeg een achtergrondafbeelding toe -->
                                 <StackPanel.Background>
                                     <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg"/>
@@ -2500,7 +2500,7 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                 </TextBlock>
                             </StackPanel>
 
-                            <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">
+                            <StackPanel Background="{MainBackgroundColor}" Grid.Column="1" Grid.Row="0" SnapsToDevicePixels="True" Margin="10,5">
                                 <!-- <StackPanel.Background>
                                     <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/french-fries/french-fries-full.ico"/>
                                 </StackPanel.Background> -->
