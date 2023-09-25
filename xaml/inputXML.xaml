@@ -386,9 +386,9 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
+                            <!-- <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
+                            </Grid.RowDefinitions> -->
                             <StackPanel Grid.Column="0" Margin="10,5">
                                 <!-- Voeg een achtergrondafbeelding toe -->
                                 <StackPanel.Background>
@@ -404,12 +404,12 @@
                                 </TextBlock>
                             </StackPanel>
 
-                            <StackPanel Grid.Column="1" Margin="10,5">
-                                <StackPanel.Background>
+                            <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">
+                                <!-- <StackPanel.Background>
                                     <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/french-fries/french-fries-full.ico"/>
-                                </StackPanel.Background>
+                                </StackPanel.Background> -->
                                 <Button Name="WPFBinsecurity" FontSize="16" Content="Theme 1" Margin="20,4,20,10" Padding="10"/>
-                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300" Opacity="0.20"> Placeholder text.<LineBreak/><LineBreak/>More soon.</TextBlock>
+                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300" Opacity="1"> Placeholder text.<LineBreak/><LineBreak/>More soon.</TextBlock>
                             </StackPanel>
                         </Grid>
                     </TabItem>
