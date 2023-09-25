@@ -2499,8 +2499,8 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                                     
                                 </TextBlock>
                             </StackPanel>
-                            <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">
-                                <!-- <StackPanel.Background><ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/french-fries/french-fries-full.ico"/></StackPanel.Background> -->
+                            <StackPanel SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">
+                                <StackPanel.Background><ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/french-fries/french-fries-full.ico"/></StackPanel.Background>
                                 <Button Name="WPFBinsecurity" FontSize="16" Content="Security (Recommended) Settings" Margin="20,4,20,10" Padding="10"/>
                                 <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">This is my recommended setting I use on all computers.
                                     <LineBreak/>
@@ -5563,14 +5563,14 @@ Invoke-WPFRunspace -ScriptBlock {
 
 Invoke-WPFFormVariables
 
-try{
-    Install-WinUtilChoco
-}
-Catch [ChocoFailedInstall]{
-    Write-Host "==========================================="
-    Write-Host "--    Chocolatey failed to install      ---"
-    Write-Host "==========================================="
-}
+# try{
+#     Install-WinUtilChoco
+# }
+# Catch [ChocoFailedInstall]{
+#     Write-Host "==========================================="
+#     Write-Host "--    Chocolatey failed to install      ---"
+#     Write-Host "==========================================="
+# }
 $sync["Form"].title = $sync["Form"].title + " " + $sync.version
 $sync["Form"].Add_Closing({
     $sync.runspace.Dispose()
