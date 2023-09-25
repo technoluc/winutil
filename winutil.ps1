@@ -2484,6 +2484,7 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
                             <StackPanel Grid.Column="0" Grid.Row="0" Margin="10,5">
                                 <!-- Voeg een achtergrondafbeelding toe -->
