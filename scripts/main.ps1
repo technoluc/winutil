@@ -131,14 +131,14 @@ Invoke-WPFRunspace -ScriptBlock {
 
 Invoke-WPFFormVariables
 
-try{
-    Install-WinUtilChoco
-}
-Catch [ChocoFailedInstall]{
-    Write-Host "==========================================="
-    Write-Host "--    Chocolatey failed to install      ---"
-    Write-Host "==========================================="
-}
+# try{
+#     Install-WinUtilChoco
+# }
+# Catch [ChocoFailedInstall]{
+#     Write-Host "==========================================="
+#     Write-Host "--    Chocolatey failed to install      ---"
+#     Write-Host "==========================================="
+# }
 $sync["Form"].title = $sync["Form"].title + " " + $sync.version
 $sync["Form"].Add_Closing({
     $sync.runspace.Dispose()
