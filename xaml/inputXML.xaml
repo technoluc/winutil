@@ -381,22 +381,24 @@
                         </Grid>
                     </TabItem>
                     <TabItem Header="BinUtil" Visibility="Collapsed" Name="WPFTab2">
-                        <StackPanel Margin="10,5">
-                            <!-- Voeg een achtergrondafbeelding toe -->
-                            <StackPanel.Background>
-                                <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg" Stretch="Uniform"/>
-                            </StackPanel.Background>
-                            <Button Name="WPFBinUtil" FontSize="16" Content="Change Recycle Bin Theme" Margin="20,4,20,10" Padding="10"/>
-                            <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300" Opacity="0.50">
-                                <TextBlock.Foreground>
-                                    <SolidColorBrush Color="{LabelboxForegroundColor}" Opacity="1"/>
-                                </TextBlock.Foreground>
-                                                    This is a tool to theme the recycle bin. 
-                                <LineBreak/>
-                                <LineBreak/> Option to change to 1 of 8 themes or reset to default.
-                                                
-                            </TextBlock>
-                        </StackPanel>
+                        <Grid>
+                            <StackPanel Margin="10,5">
+                                <!-- Voeg een achtergrondafbeelding toe -->
+                                <StackPanel.Background>
+                                    <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg" Stretch="Uniform"/>
+                                </StackPanel.Background>
+                                <Button Name="WPFBinUtil" FontSize="16" Content="Change Recycle Bin Theme" Margin="20,4,20,10" Padding="10"/>
+                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300" Opacity="0.50">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{LabelboxForegroundColor}" Opacity="1"/>
+                                    </TextBlock.Foreground>
+                                                        This is a tool to theme the recycle bin. 
+                                    <LineBreak/>
+                                    <LineBreak/> Option to change to 1 of 8 themes or reset to default.
+                                                    
+                                </TextBlock>
+                            </StackPanel>
+                        </Grid>
                     </TabItem>
                     <TabItem Header="Tweaks" Visibility="Collapsed" Name="WPFTab3">
                         <Grid Background="#444444">
