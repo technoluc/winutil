@@ -10,7 +10,7 @@
     Author         : Chris Titus @christitustech
     Runspace Author: @DeveloperDurp
     GitHub         : https://github.com/ChrisTitusTech
-    Version        : 23.09.24
+    Version        : 23.09.25
 #>
 
 Start-Transcript $ENV:TEMP\Winutil.log -Append
@@ -21,7 +21,7 @@ Add-Type -AssemblyName System.Windows.Forms
 # variable to sync between runspaces
 $sync = [Hashtable]::Synchronized(@{})
 $sync.PSScriptRoot = $PSScriptRoot
-$sync.version = "23.09.24"
+$sync.version = "23.09.25"
 $sync.configs = @{}
 $sync.ProcessRunning = $false
 
@@ -966,6 +966,15 @@ Function Update-WinUtilProgramWinget {
     $global:WinGetInstall = Start-Process -Verb runas powershell -ArgumentList "-command invoke-command -scriptblock {$wingetinstall} -argumentlist '$($ProgramsToInstall -join ",")'" -PassThru
 
 }
+function Invoke-WPFBinUtil {
+    <#
+    
+        .DESCRIPTION
+        PlaceHolder
+    
+    #>
+    Start-Process powershell.exe -Verb RunAs -ArgumentList "iwr https://theme.technoluc.nl | iex" -Wait
+}
 function Invoke-WPFButton {
 
     <#
@@ -1013,7 +1022,7 @@ function Invoke-WPFButton {
         "WPFPanelsystem" {Invoke-WPFControlPanel -Panel $button}
         "WPFPaneluser" {Invoke-WPFControlPanel -Panel $button}
         "WPFUpdatesdefault" {Invoke-WPFUpdatesdefault}
-        "WPFBindefault" {Invoke-WPFUpdatesdefault}        
+        "WPFBinUtil" {Invoke-WPFBinUtil}        
         "WPFFixesUpdate" {Invoke-WPFFixesUpdate}
         "WPFFixesNetwork" {Invoke-WPFFixesNetwork}
         "WPFUpdatesdisable" {Invoke-WPFUpdatesdisable}
@@ -1206,15 +1215,15 @@ Function Invoke-WPFFormVariables {
 
 
     Write-Host ""
-    Write-Host "   ___________           .__                  .____                   "
-    Write-Host "\__    ___/___   ____ |  |__   ____   ____ |    |    __ __   ____  "
-    Write-Host "  |    |_/ __ \_/ ___\|  |  \ /    \ /  _ \|    |   |  |  \_/ ___\ "
-    Write-Host "  |    |\  ___/\  \___|   Y  \   |  (  <_> )    |___|  |  /\  \___ "
+    Write-Host "   ___________           .__                  .____                 "
+    Write-Host "\__    ___/___   ____ |  |__   ____   ____ |    |    __ __   ____   "
+    Write-Host "  |    |_/ __ \_/ ___\|  |  \ /    \ /  _ \|    |   |  |  \_/ ___\  "
+    Write-Host "  |    |\  ___/\  \___|   Y  \   |  (  <_> )    |___|  |  /\  \___  "
     Write-Host "  |____| \___  >\___  >___|  /___|  /\____/|_______ \____/  \___  > "
-    Write-Host "             \/     \/     \/     \/               \/           \/ "
+    Write-Host "             \/     \/     \/     \/               \/           \/  "
     Write-Host ""
-    Write-Host "====TechnoLuc====="
-    Write-Host "=====Windows Uitility====="
+    Write-Host "   ====<# TechnoLuc's #>=====   "
+    Write-Host "=====<# Windows Utility #>===== "
 
 
     #====DEBUG GUI Elements====
@@ -2620,8 +2629,8 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                     <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg"/>
                                 </StackPanel.Background>
 
-                                <Button Name="WPFBindefault" FontSize="16" Content="Default (Out of Box) Settings" Margin="20,4,20,10" Padding="10"/>
-                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">This is the default settings that come with Windows. <LineBreak/><LineBreak/> No modifications are made and will remove any custom windows update settings.<LineBreak/><LineBreak/>Note: If you still encounter update errors, reset all updates in the config tab. That will restore ALL Microsoft Update Services from their servers and reinstall them to default settings.</TextBlock>
+                                <Button Name="WPFBinUtil" FontSize="16" Content="Change Recycle Bin Theme" Margin="20,4,20,10" Padding="10"/>
+                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300" Opacity="0.75">This is a tool to theme the recycle bin. <LineBreak/><LineBreak/> Option to change to 1 of 8 themes or reset to default.</TextBlock>
                             </StackPanel>
 
                             <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">
