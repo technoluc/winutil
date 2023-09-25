@@ -2502,7 +2502,7 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
 
                             <StackPanel Grid.Column="1" Margin="10,5">
                                 <StackPanel.Background>
-                                    <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/french-fries/preview.gif"/>
+                                    <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/french-fries/french-fries-full.ico"/>
                                 </StackPanel.Background>
                                 <Button Name="WPFBinsecurity" FontSize="16" Content="Theme 1" Margin="20,4,20,10" Padding="10"/>
                                 <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300" Opacity="0.20"> Placeholder text.<LineBreak/><LineBreak/>More soon.</TextBlock>
