@@ -2482,11 +2482,11 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
+                            <!-- <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <StackPanel Grid.Column="0" Grid.Row="0" Margin="10,5">
+                            </Grid.RowDefinitions> -->
+                            <StackPanel Grid.Column="0" Margin="10,5">
                                 <!-- Voeg een achtergrondafbeelding toe -->
                                 <StackPanel.Background>
                                     <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg"/>
@@ -2500,13 +2500,18 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                     This is a tool to theme the recycle bin. <LineBreak/><LineBreak/> Option to change to 1 of 8 themes or reset to default.
                                 </TextBlock>
                             </StackPanel>
-
-                            <StackPanel Background="{MainBackgroundColor}" Grid.Column="1" Grid.Row="0" SnapsToDevicePixels="True" Margin="10,5">
+                            <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">
                                 <!-- <StackPanel.Background>
                                     <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/themes/french-fries/french-fries-full.ico"/>
                                 </StackPanel.Background> -->
-                                <Button Name="WPFBinsecurity" FontSize="16" Content="Theme 1" Margin="20,4,20,10" Padding="10"/>
-                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300" Opacity="1"> Placeholder text.<LineBreak/><LineBreak/>More soon.</TextBlock>
+                                <Button Name="WPFUpdatessecurity" FontSize="16" Content="Security (Recommended) Settings" Margin="20,4,20,10" Padding="10"/>
+                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">This is my recommended setting I use on all computers.<LineBreak/><LineBreak/> It will delay feature updates by 2 years and will install security updates 4 days after release.</TextBlock>
+                            </StackPanel>
+                            <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="2" Margin="10,5">
+                                <Button Name="WPFUpdatesdisable" FontSize="16" Content="Disable ALL Updates (NOT RECOMMENDED!)" Margin="20,4,20,10" Padding="10,10,10,10"/>
+                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">This completely disables ALL Windows Updates and is NOT RECOMMENDED.<LineBreak/><LineBreak/> However, it can be suitable if you use your system for a select purpose and do not actively browse the internet. .</TextBlock>
+                                <TextBlock Text=" " Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300"/>
+
                             </StackPanel>
                         </Grid>
                     </TabItem>
