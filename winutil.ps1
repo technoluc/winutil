@@ -2640,7 +2640,12 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                 </StackPanel.Background>
 
                                 <Button Name="WPFBinUtil" FontSize="16" Content="Change Recycle Bin Theme" Margin="20,4,20,10" Padding="10"/>
-                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300" Opacity="0.25">This is a tool to theme the recycle bin. <LineBreak/><LineBreak/> Option to change to 1 of 8 themes or reset to default.</TextBlock>
+                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300" Opacity="0.50">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{LabelboxForegroundColor}" Opacity="1"/>
+                                    </TextBlock.Foreground>
+                                    This is a tool to theme the recycle bin. <LineBreak/><LineBreak/> Option to change to 1 of 8 themes or reset to default.
+                                </TextBlock>
                             </StackPanel>
 
                             <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">
