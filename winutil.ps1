@@ -2483,7 +2483,7 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
                             <StackPanel Grid.Column="0" Grid.Row="0" Margin="10,5">
