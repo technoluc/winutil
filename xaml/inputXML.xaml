@@ -543,8 +543,8 @@
                                     <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg"/>
                                 </StackPanel.Background>
 
-                                <Button Name="WPFBindefault" FontSize="16" Content="Default (Out of Box) Settings" Margin="20,4,20,10" Padding="10"/>
-                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">This is the default settings that come with Windows. <LineBreak/><LineBreak/> No modifications are made and will remove any custom windows update settings.<LineBreak/><LineBreak/>Note: If you still encounter update errors, reset all updates in the config tab. That will restore ALL Microsoft Update Services from their servers and reinstall them to default settings.</TextBlock>
+                                <Button Name="WPFBinUtil" FontSize="16" Content="Change Recycle Bin Theme" Margin="20,4,20,10" Padding="10"/>
+                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300" Opacity="0.75">This is a tool to theme the recycle bin. <LineBreak/><LineBreak/> Option to change to 1 of 8 themes or reset to default.</TextBlock>
                             </StackPanel>
 
                             <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">

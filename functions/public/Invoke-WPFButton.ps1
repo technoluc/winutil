@@ -45,7 +45,7 @@ function Invoke-WPFButton {
         "WPFPanelsystem" {Invoke-WPFControlPanel -Panel $button}
         "WPFPaneluser" {Invoke-WPFControlPanel -Panel $button}
         "WPFUpdatesdefault" {Invoke-WPFUpdatesdefault}
-        "WPFBindefault" {Invoke-WPFUpdatesdefault}        
+        "WPFBinUtil" {Invoke-WPFBinUtil}        
         "WPFFixesUpdate" {Invoke-WPFFixesUpdate}
         "WPFFixesNetwork" {Invoke-WPFFixesNetwork}
         "WPFUpdatesdisable" {Invoke-WPFUpdatesdisable}
