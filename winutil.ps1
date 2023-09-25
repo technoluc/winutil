@@ -2503,23 +2503,24 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                     </TextBlock.Foreground>
                                     This is a tool to theme the recycle bin. <LineBreak/><LineBreak/> Option to change to 1 of 8 themes or reset to default.
                                 </TextBlock>
-                            </StackPanel>
-                            <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">
-                            <Button Name="WPFBinsecurity" FontSize="16" Content="Security (Recommended) Settings" Margin="20,4,20,10" Padding="10"/>
-                            <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">This is ChrisTitusTech''s recommended setting.
-                                <LineBreak/>
-                                <LineBreak/> Delay feature updates by 2 years and install security updates 4 days after release.
-                                <LineBreak/>
-                            </TextBlock>
-                            </StackPanel>
-                            <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="2" Margin="10,5">
-                            <Button Name="WPFBindisable" FontSize="16" Content="Disable ALL Updates (NOT RECOMMENDED!)" Margin="20,4,20,10" Padding="10,10,10,10"/>
-                            <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">This completely disables ALL Windows Updates and is NOT RECOMMENDED.
-                                <LineBreak/>
-                                <LineBreak/>Note: Your system will be easier to hack and infect without security updates.
-                            </TextBlock>
-                            <TextBlock Text=" " Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300"/>
-                            </StackPanel>
+                                <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">
+                                    <Button Name="WPFBinsecurity" FontSize="16" Content="Security (Recommended) Settings" Margin="20,4,20,10" Padding="10"/>
+                                    <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">
+                                        This is ChrisTitusTech''s recommended setting.
+                                        <LineBreak/>
+                                        <LineBreak/> Delay feature updates by 2 years and install security updates 4 days after release.
+                                        <LineBreak/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Column="2" Margin="10,5">
+                                    <Button Name="WPFBindisable" FontSize="16" Content="Disable ALL Updates (NOT RECOMMENDED!)" Margin="20,4,20,10" Padding="10,10,10,10"/>
+                                    <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">
+                                        This completely disables ALL Windows Updates and is NOT RECOMMENDED.
+                                        <LineBreak/>
+                                        <LineBreak/>Note: Your system will be easier to hack and infect without security updates.
+                                    </TextBlock>
+                                    <TextBlock Text=" " Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300"/>
+                                </StackPanel>
                         </Grid>
                     </TabItem>
                     <TabItem Header="Tweaks" Visibility="Collapsed" Name="WPFTab3">
