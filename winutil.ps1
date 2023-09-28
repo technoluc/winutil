@@ -10,7 +10,7 @@
     Author         : Chris Titus @christitustech
     Runspace Author: @DeveloperDurp
     GitHub         : https://github.com/ChrisTitusTech
-    Version        : 23.09.25
+    Version        : 23.09.28
 #>
 
 Start-Transcript $ENV:TEMP\Winutil.log -Append
@@ -21,7 +21,7 @@ Add-Type -AssemblyName System.Windows.Forms
 # variable to sync between runspaces
 $sync = [Hashtable]::Synchronized(@{})
 $sync.PSScriptRoot = $PSScriptRoot
-$sync.version = "23.09.25"
+$sync.version = "23.09.28"
 $sync.configs = @{}
 $sync.ProcessRunning = $false
 
@@ -2483,7 +2483,11 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <StackPanel Margin="10,5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height=".5*"/>
+                                <RowDefinition Height=".5*"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel SnapsToDevicePixels="True" Grid.Column="0" Grid.Row="0" Margin="10,5">
                                 <StackPanel.Background>
                                     <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg" Stretch="Uniform"/>
                                 </StackPanel.Background>
@@ -2500,14 +2504,14 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                     <LineBreak/>
                                 </TextBlock>
                             </StackPanel>
-                            <StackPanel SnapsToDevicePixels="True" Grid.Column="1" Margin="10,5">
+                            <StackPanel SnapsToDevicePixels="True" Grid.Column="1" Grid.Row="0" Margin="10,5">
                                 <StackPanel.Background>
                                     <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg" Stretch="Uniform"/>
                                 </StackPanel.Background>
                                 <Button Name="WPFBinsecurity" FontSize="16" Content="Security (Recommended) Settings" Margin="20,4,20,10" Padding="10"/>
                                 <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">This is my recommended setting I use on all computers.<LineBreak/><LineBreak/> It will delay feature updates by 2 years and will install security updates 4 days after release.<LineBreak/><LineBreak/>Feature Updates: Adds features and often bugs to systems when they are released. You want to delay these as long as possible.<LineBreak/><LineBreak/>Security Updates: Typically these are pressing security flaws that need to be patched quickly. You only want to delay these a couple of days just to see if they are safe and don''t break other systems. You don''t want to go without these for ANY extended periods of time.</TextBlock>
                             </StackPanel>
-                            <StackPanel SnapsToDevicePixels="True" Grid.Column="2" Margin="10,5">
+                            <StackPanel SnapsToDevicePixels="True" Grid.Column="2" Grid.Row="0" Margin="10,5">
                                 <StackPanel.Background>
                                     <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg" Stretch="Uniform"/>
                                 </StackPanel.Background>
@@ -2516,6 +2520,39 @@ $inputXML = '<Window x:Class="WinUtility.MainWindow"
                                 <TextBlock Text=" " Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300"/>
 
                             </StackPanel>
+
+                            <StackPanel SnapsToDevicePixels="True" Grid.Column="0" Grid.Row="1" Margin="10,5">
+                                <StackPanel.Background>
+                                    <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg" Stretch="Uniform"/>
+                                </StackPanel.Background>
+                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" Opacity="0.50">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{LabelboxForegroundColor}" Opacity="1"/>
+                                    </TextBlock.Foreground>
+                                                        This is a tool to theme the recycle bin. 
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/> Option to change to 1 of 8 themes or reset to default.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </TextBlock>
+                            </StackPanel>
+                            <StackPanel SnapsToDevicePixels="True" Grid.Column="1" Grid.Row="1" Margin="10,5">
+                                <StackPanel.Background>
+                                    <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg" Stretch="Uniform"/>
+                                </StackPanel.Background>
+                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">This is my recommended setting I use on all computers.<LineBreak/><LineBreak/> It will delay feature updates by 2 years and will install security updates 4 days after release.<LineBreak/><LineBreak/>Feature Updates: Adds features and often bugs to systems when they are released. You want to delay these as long as possible.<LineBreak/><LineBreak/>Security Updates: Typically these are pressing security flaws that need to be patched quickly. You only want to delay these a couple of days just to see if they are safe and don''t break other systems. You don''t want to go without these for ANY extended periods of time.</TextBlock>
+                            </StackPanel>
+                            <StackPanel SnapsToDevicePixels="True" Grid.Column="2" Grid.Row="1" Margin="10,5">
+                                <StackPanel.Background>
+                                    <ImageBrush ImageSource="https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/assets/bin.jpg" Stretch="Uniform"/>
+                                </StackPanel.Background>
+                                <TextBlock Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300">This completely disables ALL Windows Updates and is NOT RECOMMENDED.<LineBreak/><LineBreak/> However, it can be suitable if you use your system for a select purpose and do not actively browse the internet. <LineBreak/><LineBreak/>Note: Your system will be easier to hack and infect without security updates.</TextBlock>
+                                <TextBlock Text=" " Margin="20,0,20,0" Padding="10" TextWrapping="WrapWithOverflow" MaxWidth="300"/>
+
+                            </StackPanel>
+
+
                         </Grid>
                     </TabItem>
                     <TabItem Header="Tweaks" Visibility="Collapsed" Name="WPFTab3">
