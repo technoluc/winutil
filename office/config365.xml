@@ -15,6 +15,7 @@
       <ExcludeApp ID="Teams" />
     </Product>
   </Add>
+  <Property Name="AUTOACTIVATE" Value="1" />
   <Updates Enabled="TRUE" />
   <RemoveMSI />
   <AppSettings>
